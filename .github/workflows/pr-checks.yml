@@ -1,0 +1,96 @@
+# AI-assisted (Claude Code, claude.ai) -- https://claude.ai
+name: PR Checks
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, edited, synchronize, reopened]
+
+jobs:
+  pr-summary:
+    name: PR Summary
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify Summary section has real content
+        env:
+          BODY: ${{ github.event.pull_request.body }}
+        run: |
+          if [ -z "$BODY" ]; then
+            echo "::error::PR body is empty. Fill in the ## Summary section."
+            exit 1
+          fi
+          SUMMARY=$(printf '%s\n' "$BODY" | awk '/^## Summary/{f=1;next}/^##/{f=0}f')
+          CLEAN=$(printf '%s\n' "$SUMMARY" | sed '/^<!--/,/-->/d' | tr -d '[:space:]\n')
+          if [ -z "$CLEAN" ]; then
+            echo "::error::## Summary section is empty or only contains placeholder text. Write at least one sentence."
+            exit 1
+          fi
+
+  secret-scan:
+    name: Secret Scan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Detect committed .env or credential files
+        run: |
+          git fetch origin ${{ github.base_ref }}
+          ADDED=$(git diff --name-only --diff-filter=A origin/${{ github.base_ref }}...HEAD || true)
+          FLAGGED=""
+          for f in $ADDED; do
+            case "$f" in
+              *.env|.env|*/.env|*.pem|*.key|*.p12|*.pfx|credentials.json|secrets.json|service_account.json)
+                FLAGGED="$FLAGGED $f" ;;
+            esac
+          done
+          if [ -n "$FLAGGED" ]; then
+            echo "::error::Sensitive files detected: $FLAGGED -- remove them and update .gitignore."
+            exit 1
+          fi
+
+  large-file-scan:
+    name: Large File Scan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Reject files larger than 50 MB
+        run: |
+          git fetch origin ${{ github.base_ref }}
+          LIMIT=52428800  # 50 MB in bytes
+          FILES=$(git diff --name-only --diff-filter=AM origin/${{ github.base_ref }}...HEAD || true)
+          for f in $FILES; do
+            [ -f "$f" ] || continue
+            SIZE=$(wc -c < "$f")
+            if [ "$SIZE" -gt "$LIMIT" ]; then
+              MB=$(awk "BEGIN{printf \"%.1f\", $SIZE / 1048576}")
+              echo "::error::$f is ${MB} MB -- exceeds 50 MB limit. Add to .gitignore or use Git LFS."
+              exit 1
+            fi
+          done
+
+  ai-attribution:
+    name: AI Attribution
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Check newly added .py files include AI attribution comment
+        run: |
+          git fetch origin ${{ github.base_ref }}
+          NEW_PY=$(git diff --name-only --diff-filter=A origin/${{ github.base_ref }}...HEAD | grep '\.py$' || true)
+          MISSING=""
+          for f in $NEW_PY; do
+            [ -f "$f" ] || continue
+            if ! grep -qE '# AI-assisted' "$f"; then
+              MISSING="$MISSING $f"
+            fi
+          done
+          if [ -n "$MISSING" ]; then
+            echo "::error::New .py files missing AI attribution header: $MISSING"
+            echo "::error::Add at the top: # AI-assisted (Claude Code, claude.ai) -- https://claude.ai"
+            exit 1
+          fi
