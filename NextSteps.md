@@ -95,12 +95,123 @@ model.eval()
 # See scripts/evaluate.py for the full recommend wrapper pattern
 ```
 
-**Tech choice:**
-- Streamlit is fastest but needs polish — use custom CSS, sidebar navigation, image grids
-- FastAPI + React if you want a more production feel
-- Product images are local files — serve them from the app or copy a subset to a static folder
+### 2. Deployment — HF Spaces Backend + GitHub Pages Frontend
 
-### 2. Git Workflow
+The site is `OneHautEncoded.github.io` (GitHub Pages = static files only). Models need Python to run, so the architecture is:
+
+```
+GitHub Pages (frontend HTML/CSS/JS)  →  HF Spaces (model API backend)
+   one-haut-encoded.github.io              *.hf.space
+```
+
+All models, processed data, and 3K product images are uploaded to HF Hub at:
+**https://huggingface.co/DTanzillo/one-haut-encoded**
+
+Alex doesn't need Kaggle, a GPU, or to retrain anything.
+
+#### Step 1: Get the data (one command)
+
+```bash
+pip install huggingface_hub
+python scripts/download_from_hf.py
+```
+
+This downloads all models, processed data, and subset images (~2.7 GB).
+
+#### Step 2: Set up the HF Space (model API backend)
+
+1. Go to [huggingface.co/spaces](https://huggingface.co/spaces), click **Create new Space**
+2. Name: `one-haut-encoded`, SDK: **Gradio** (or FastAPI), Visibility: **Public**
+3. Clone the space:
+   ```bash
+   git clone https://huggingface.co/spaces/YOUR_HF_USERNAME/one-haut-encoded
+   cd one-haut-encoded
+   ```
+4. Create `app.py` that:
+   - On startup, downloads models from `DTanzillo/one-haut-encoded` via `huggingface_hub`
+   - Exposes endpoints: `/recommend?customer_id=X&model=popularity|knn|ncf`
+   - Returns JSON: article IDs, metadata, and HF-hosted image URLs
+5. Create `requirements.txt`:
+   ```
+   torch
+   scikit-learn
+   pandas
+   numpy
+   huggingface_hub
+   gradio
+   ```
+6. Push — HF builds and deploys automatically:
+   ```bash
+   git add . && git commit -m "Initial app" && git push
+   ```
+7. API is live at `https://YOUR_HF_USERNAME-one-haut-encoded.hf.space`
+
+**Loading models in the HF Space app:**
+```python
+# Baseline / KNN — pickle load, call .recommend()
+import pickle
+with open("models/knn/knn.pkl", "rb") as f:
+    knn_model = pickle.load(f)
+recs = knn_model.recommend(customer_id, k=12)  # returns list of article_ids
+
+# NCF — load PyTorch model, score all items for a user
+import torch
+from scripts.train_ncf import NCFModel
+model = NCFModel(n_users=23373, n_items=2998, embed_dim=64, n_meta_features=206)
+model.load_state_dict(torch.load("models/ncf/ncf-meta.pt", map_location="cpu"))
+model.eval()
+# See scripts/evaluate.py for the full NCF recommend wrapper pattern
+```
+
+#### Step 3: Build the GitHub Pages frontend
+
+The frontend is static HTML/CSS/JS in the repo root.
+
+1. Create a feature branch:
+   ```bash
+   cd OneHautEncoded.github.io
+   git checkout -b feature/frontend
+   ```
+2. Build `index.html` with:
+   - User selector dropdown (pre-loaded with 10 demo users)
+   - "Purchase History" section — product image grid
+   - "Recommendations" section — model toggle (Popularity / KNN / NCF)
+   - Product cards: image + name + type + colour + department
+3. JS fetches from the HF Space API:
+   ```javascript
+   const API = "https://YOUR_HF_USERNAME-one-haut-encoded.hf.space";
+   const res = await fetch(`${API}/recommend?customer_id=${uid}&model=knn`);
+   const recs = await res.json();
+   ```
+4. **Static fallback** (works even without the API):
+   `data/processed/precomputed_recommendations.json` has pre-computed recommendations for all 10 demo users with full metadata. Load it directly:
+   ```javascript
+   const data = await fetch("data/processed/precomputed_recommendations.json")
+     .then(r => r.json());
+   // data[0].recommendations.knn = [{article_id, product_type, colour, ...}, ...]
+   ```
+5. Product images — reference from HF Hub CDN (no need to commit images to the repo):
+   ```
+   https://huggingface.co/DTanzillo/one-haut-encoded/resolve/main/data/images/{article_id[:3]}/{article_id}.jpg
+   ```
+   Example: `https://huggingface.co/DTanzillo/one-haut-encoded/resolve/main/data/images/075/0751471001.jpg`
+
+#### Step 4: Enable GitHub Pages
+
+1. Go to repo **Settings > Pages**
+2. Source: **Deploy from a branch**
+3. Branch: `main`, folder: `/ (root)`
+4. Save — site goes live at `https://one-haut-encoded.github.io`
+
+#### Step 5: Push & PR
+
+```bash
+git add index.html style.css app.js  # whatever frontend files
+git push -u origin feature/frontend
+# Open PR on GitHub, fill in the template, Dominic reviews and merges
+```
+
+### 3. Git Workflow
 
 **Important:** Main branch is protected. You must:
 1. Accept the collaborator invite on GitHub (check your email)
