@@ -3,6 +3,10 @@
 
 Run this once to get everything you need without retraining:
     python scripts/download_from_hf.py
+
+For product images, download from Kaggle separately:
+    kaggle competitions download -c h-and-m-personalized-fashion-recommendations
+    unzip h-and-m-personalized-fashion-recommendations.zip -d data/raw/
 """
 
 from huggingface_hub import snapshot_download
@@ -14,7 +18,7 @@ def download():
     local_dir = Path(".")
 
     print(f"Downloading from {repo_id}...")
-    print("This includes models, processed data, and subset images (~2.7 GB)")
+    print("This includes models and processed data (~300 MB)")
 
     snapshot_download(
         repo_id=repo_id,
@@ -24,10 +28,14 @@ def download():
     )
 
     print("\nDone! You now have:")
-    print("  models/          — all trained model artifacts")
-    print("  data/processed/  — subset CSVs, parquets, embeddings, demo users")
-    print("  data/images/     — product images for the 3K article subset")
-    print("\nYou can now run the app without any training.")
+    print("  models/          — all 7 trained model artifacts (baseline, KNN, NCF variants)")
+    print("  data/processed/  — subset CSVs, parquets, demo users, precomputed recommendations")
+    print()
+    print("For product images, download from Kaggle:")
+    print("  kaggle competitions download -c h-and-m-personalized-fashion-recommendations")
+    print("  unzip h-and-m-personalized-fashion-recommendations.zip -d data/raw/")
+    print()
+    print("Image path pattern: data/raw/images/{article_id[:3]}/{article_id}.jpg")
 
 
 if __name__ == "__main__":

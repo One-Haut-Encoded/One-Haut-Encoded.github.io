@@ -109,14 +109,23 @@ All models, processed data, and 3K product images are uploaded to HF Hub at:
 
 Alex doesn't need Kaggle, a GPU, or to retrain anything.
 
-#### Step 1: Get the data (one command)
+#### Step 1: Get the data
 
 ```bash
 pip install huggingface_hub
 python scripts/download_from_hf.py
 ```
 
-This downloads all models, processed data, and subset images (~2.7 GB).
+This downloads all models and processed data from HF Hub (~300 MB). No retraining needed.
+
+For product images (needed for the frontend), download from Kaggle:
+```bash
+pip install kaggle
+# Accept competition rules at kaggle.com/competitions/h-and-m-personalized-fashion-recommendations/rules
+kaggle competitions download -c h-and-m-personalized-fashion-recommendations
+unzip h-and-m-personalized-fashion-recommendations.zip -d data/raw/
+```
+Image path pattern: `data/raw/images/{article_id[:3]}/{article_id}.jpg`
 
 #### Step 2: Set up the HF Space (model API backend)
 
