@@ -2,6 +2,9 @@
 data/raw/
 data/processed/
 data/outputs/
+data/demo_images_subset/
+onehautapp/mnt/
+_smoke_resize/
 
 # Model artifacts
 models/
@@ -42,3 +45,6 @@ Thumbs.db
 
 # Kaggle
 *.zip
+
+onehautapp/
+images/
