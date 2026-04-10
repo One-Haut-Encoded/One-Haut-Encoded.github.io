@@ -3,7 +3,7 @@
 // ── Configuration ────────────────────────────────────────────
 // When deployed, set this to your HF Space URL for live inference.
 // When empty, falls back to precomputed static data.
-const API_BASE = "";
+const API_BASE = "https://dtanzillo-one-haut-encoded.hf.space";
 
 const MODEL_KEYS = { popularity: "popularity", knn: "knn", ncf: "ncf_meta" };
 const MODEL_NAMES = { popularity: "Popularity", knn: "KNN", ncf: "NCF + Metadata" };
