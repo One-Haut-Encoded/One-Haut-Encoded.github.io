@@ -1,9 +1,17 @@
 // AI-assisted (Claude Code, claude.ai) -- https://claude.ai
 
 // ── Configuration ────────────────────────────────────────────
-// Set API_BASE to the HF Space URL once the backend is deployed.
-// When empty, falls back to precomputed static data.
-const API_BASE = "";
+// Local dev: same machine serves static files (e.g. python -m http.server) and
+// the FastAPI app (uvicorn backend.main:app --port 7860). Production: HF Space.
+const API_BASE = (() => {
+  if (typeof window !== "undefined") {
+    const h = window.location.hostname;
+    if (h === "localhost" || h === "127.0.0.1") {
+      return "http://127.0.0.1:7860";
+    }
+  }
+  return "https://alexoh2020-onehautapp.hf.space";
+})();
 
 // Product images served from HF dataset bucket.
 const IMAGE_CDN = "https://huggingface.co/datasets/alexoh2020/onehautapp-storage/resolve/main/images";
