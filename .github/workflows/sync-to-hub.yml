@@ -1,3 +1,4 @@
+# AI-assisted (Cursor) -- https://cursor.com
 name: Sync to Hugging Face hub
 on:
   push:

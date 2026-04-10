@@ -1,3 +1,4 @@
+# AI-assisted (Cursor) -- https://cursor.com
 """FastAPI app: public JSON API for GitHub Pages (CORS) and HF Spaces."""
 
 from __future__ import annotations

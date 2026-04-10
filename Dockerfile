@@ -1,3 +1,4 @@
+# AI-assisted (Cursor) -- https://cursor.com
 # Hugging Face Space / Docker: API only (backend FastAPI).
 # Connect Space alexoh2020/onehaut_backend to this repo; SDK: Docker.
 FROM python:3.11-slim

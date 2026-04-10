@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# AI-assisted (Cursor) -- https://cursor.com
 """
 Build ~3k resized JPEGs (240×320, quality 80) for the HF dataset bucket.
 

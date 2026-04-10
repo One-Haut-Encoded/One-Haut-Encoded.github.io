@@ -1,3 +1,4 @@
+# AI-assisted (Cursor) -- https://cursor.com
 """Load trained recommenders from disk; live inference for Popularity, KNN (dynamic profile), NCF."""
 
 from __future__ import annotations
