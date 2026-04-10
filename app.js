@@ -10,7 +10,7 @@ const API_BASE = (() => {
       return "http://127.0.0.1:7860";
     }
   }
-  return "https://alexoh2020-onehautapp.hf.space";
+  return "https://alexoh2020-onehaut-backend.hf.space";
 })();
 
 // Product images served from HF dataset bucket.
