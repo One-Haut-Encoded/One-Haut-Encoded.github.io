@@ -1,5 +1,5 @@
 # Hugging Face Space / Docker: API only (backend FastAPI).
-# Connect Space alexoh2020/onehautapp to this repo; SDK: Docker.
+# Connect Space alexoh2020/onehaut_backend to this repo; SDK: Docker.
 FROM python:3.11-slim
 WORKDIR /app
 

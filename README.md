@@ -25,12 +25,12 @@ Fashion recommendation system combining visual features (CNN) with collaborative
 pip install -r requirements.txt
 ```
 
-### Hugging Face Space (`alexoh2020/onehautapp`)
+### Hugging Face Space (`alexoh2020/onehaut_backend`)
 
 1. Connect the Space to **this** GitHub repository (no separate backend repo).
 2. Set the Space **SDK** to **Docker** — the root [`Dockerfile`](Dockerfile) runs `uvicorn backend.main:app` (FastAPI under [`backend/`](backend/)).
 3. On the Space, mount or upload models to `/mnt/models` and metadata CSVs to `/mnt/metadata`, or bake them into the image.
-4. **GitHub Pages** calls the Space for live recommendations. Set `API_BASE` in [`app.js`](app.js) to your Space URL (for example `https://alexoh2020-onehautapp.hf.space`; confirm under Space **Settings → URL**).
+4. **GitHub Pages** calls the Space for live recommendations. Set `API_BASE` in [`app.js`](app.js) to your Space URL (for example `https://alexoh2020-onehaut-backend.hf.space`; confirm under Space **Settings → URL**).
 
 ### Local API (from repo root)
 
