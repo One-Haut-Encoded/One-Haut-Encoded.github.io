@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# AI-assisted (Cursor) -- https://cursor.com
 """
 Checklist: demo images for onehautapp precomputed data.
 

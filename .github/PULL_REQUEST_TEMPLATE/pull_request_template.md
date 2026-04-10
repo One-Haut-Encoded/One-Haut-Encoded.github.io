@@ -1,3 +1,5 @@
+<!-- AI-assisted (Cursor) -- https://cursor.com -->
+
 ## Summary
 
 <!-- Required. 1 paragraph describing what this PR does and why. -->

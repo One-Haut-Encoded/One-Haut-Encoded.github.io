@@ -9,6 +9,8 @@ python_version: 3.10
 app_file: backend/app.py
 ---
 
+<!-- AI-assisted (Cursor) -- https://cursor.com -->
+
 # One Haut Encoded
 
 Fashion recommendation system combining visual features (CNN) with collaborative filtering.

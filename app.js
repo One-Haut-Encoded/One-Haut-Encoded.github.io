@@ -1,4 +1,5 @@
 // AI-assisted (Claude Code, claude.ai) -- https://claude.ai
+// AI-assisted (Cursor) -- https://cursor.com
 
 // ── Configuration ────────────────────────────────────────────
 // Local dev: same machine serves static files (e.g. python -m http.server) and

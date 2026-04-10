@@ -1,3 +1,4 @@
+# AI-assisted (Cursor) -- https://cursor.com
 """Resolve metadata CSVs, model artifacts, and live user IDs (test ∩ customers_subset)."""
 
 from __future__ import annotations

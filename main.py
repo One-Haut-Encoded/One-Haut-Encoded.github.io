@@ -1,3 +1,4 @@
+# AI-assisted (Cursor) -- https://cursor.com
 def main():
     print("Hello from onehautencoded-github-io!")
 

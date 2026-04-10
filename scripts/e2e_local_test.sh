@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# AI-assisted (Cursor) -- https://cursor.com
 # End-to-end check: static frontend (port 8080) + FastAPI backend (7860).
 # Run from repository root: bash scripts/e2e_local_test.sh
 set -euo pipefail
