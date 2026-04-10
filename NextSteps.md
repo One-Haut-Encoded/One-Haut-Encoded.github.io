@@ -1,133 +1,186 @@
 # Next Steps — Alex
 
-## What's Changed Since Your Last Update
+## Current State
 
-The frontend and deployment architecture have been built out. Here's the current state and what still needs your attention.
+The frontend is built and ready to merge. The backend (HF Spaces API) is yours to integrate with your existing asset bucket. Here's everything you need.
 
-### Current Architecture
+### Architecture
 
 ```
 GitHub Pages (static frontend)  →  HF Space (live model API)
-  one-haut-encoded.github.io        dtanzillo-one-haut-encoded.hf.space
+  one-haut-encoded.github.io        your-hf-space.hf.space
+        ↓                                   ↓
+  precomputed fallback             loads models from DTanzillo/one-haut-encoded
+  images from your HF bucket       serves /recommend, /purchase_history, etc.
 ```
-
-- **Frontend** (`index.html`, `style.css`, `app.js`) — static site with named style profiles, interactive "Curate Your Look" feature, methodology writeup, and full evaluation results
-- **Backend** (`backend/app.py`) — FastAPI on HF Spaces, downloads models from `DTanzillo/one-haut-encoded` on startup, serves live inference
-- **Models** — all 7 variants on HF Hub at `DTanzillo/one-haut-encoded`
-- **Images** — 330 resized thumbnails committed to `images/` for the demo users and curated browse items
 
 ### What's Done
 
-| Component | Status | Location |
-|-----------|--------|----------|
-| Data pipeline (subsample, features, split) | Complete | `scripts/` |
-| Model training (7 variants) | Complete | `scripts/`, models on HF Hub |
-| Evaluation (HR@12, NDCG@12, Coverage, Novelty) | Complete | Results in `index.html` |
-| Frontend (GitHub Pages) | Complete | `index.html`, `style.css`, `app.js` |
-| Backend API (HF Space) | Deployed | `backend/`, live at HF Space |
-| Precomputed fallback | Complete | `precomputed_recommendations.json` |
-| Product thumbnails | Complete | `images/` (330 resized JPGs, 2 MB) |
+| Component | Status | Owner |
+|-----------|--------|-------|
+| Data pipeline + training scripts | Complete | Dominic |
+| 7 trained models on HF Hub | Complete | `DTanzillo/one-haut-encoded` |
+| Frontend (GitHub Pages) | Complete, PR #3 | Dominic |
+| Precomputed fallback JSON | Complete | In repo root |
+| Product image bucket | Complete | `alexoh2020/onehautapp-storage` |
+| HF Spaces backend API | **Yours to build** | Alex |
 
 ---
 
 ## What You Need to Do
 
-### 1. Review and Approve PR #3
+### 1. Review and Approve PR #3 (Frontend)
 
-The frontend deployment PR is open and needs your approval before it can merge to main.
+PR #3 adds the static frontend. Please review it and leave substantive comments — the rubric grades on PR review quality. When reviewing, consider:
 
-**Please review it thoroughly and leave substantive comments.** The rubric requires good PR reviews from each team member. A one-line approval won't demonstrate that.
-
-When reviewing, look at:
-- Does the frontend accurately represent the model evaluation results?
+- Does the frontend accurately represent the evaluation results?
 - Is the UX clear for someone unfamiliar with the project?
-- Are there any broken links or missing images?
-- Does the API integration look correct?
+- Any edge cases in the JS (error handling, empty states)?
+- Does the precomputed fallback data look correct?
 
-### 2. Fix Your Open PR (#2)
+### 2. Build the HF Spaces API Backend
 
-Your current PR ("syncing images to app") needs work before it can be merged. Specifically:
+The frontend expects a FastAPI backend with these endpoints. You can use your existing `alexoh2020/onehautapp` Space or create a new one — just make sure it serves these routes:
 
-- **Title** should be descriptive: what does this PR do and why? "syncing images to app" doesn't tell a reviewer what to expect
-- **Description** needs to use the PR template (Summary, Changes, Testing, Code Quality sections). The current body is two sentence fragments
-- **Branch name** should follow the convention: `feature/your-feature-name`
-- **Scope** should be clear: does this PR add image processing scripts? If so, explain why they're needed and how they fit into the existing pipeline
+#### Required Endpoints
 
-The rubric specifically grades on PR quality and review quality. Take the time to write a proper summary — it reflects well on both of us.
+**`GET /recommend`**
+```
+Params: customer_id (str), model (str: "popularity"|"knn"|"ncf"), k (int, default 12)
+Response: { "customer_id": str, "model": str, "count": int, "items": [...] }
 
-### 3. Enable GitHub Pages
+Each item: { "article_id": str, "product_name": str, "product_type": str, "colour": str, "department": str }
+```
 
-Once PR #3 is merged to main:
+**`GET /purchase_history`**
+```
+Params: customer_id (str), max_items (int, default 24)
+Response: { "customer_id": str, "count": int, "items": [...] }
+```
 
-1. Go to **repo Settings > Pages**
+**`GET /recommend_from_selection`**
+This powers the "Curate Your Look" feature where users select items and get personalized recommendations.
+```
+Params: article_ids (str, comma-separated), k (int, default 12)
+Response: { "count": int, "items": [...] }
+
+Implementation: build a KNN user profile from the selected article feature vectors,
+find nearest neighbors, exclude the selected items, return top-k.
+```
+
+**`GET /status`**
+```
+Response: { "models_loaded": [...], "articles_count": int, "interactions_count": int }
+```
+
+#### CORS
+
+The API must allow requests from `https://one-haut-encoded.github.io`. Add this middleware:
+```python
+from fastapi.middleware.cors import CORSMiddleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["https://one-haut-encoded.github.io", "http://localhost:8080"],
+    allow_methods=["GET"],
+    allow_headers=["*"],
+)
+```
+
+#### Loading Models
+
+All models are on HF Hub at `DTanzillo/one-haut-encoded`. Download on startup:
+
+```python
+from huggingface_hub import snapshot_download
+snapshot_download(repo_id="DTanzillo/one-haut-encoded", repo_type="model", local_dir="/app/data")
+```
+
+Then load:
+```python
+# Popularity / KNN — pickle, call .recommend()
+import pickle
+with open("models/baseline/popularity.pkl", "rb") as f:
+    pop_model = pickle.load(f)
+with open("models/knn/knn.pkl", "rb") as f:
+    knn_model = pickle.load(f)
+
+# NCF — PyTorch checkpoint
+import torch
+from train_ncf import NCFModel
+model = NCFModel(n_users=23373, n_items=2998, embed_dim=64, n_meta_features=206)
+model.load_state_dict(torch.load("models/ncf/ncf-meta.pt", map_location="cpu"))
+model.eval()
+```
+
+**Important:** The pickle files reference class definitions from `scripts/train_baseline.py`, `scripts/train_knn.py`, and `scripts/train_ncf.py`. You need these files accessible to unpickle. Either copy them into your Space or register the classes on `__main__` before loading.
+
+#### Image Serving
+
+Your bucket at `alexoh2020/onehautapp-storage` already has the images. The frontend loads them directly from the HF CDN:
+```
+https://huggingface.co/datasets/alexoh2020/onehautapp-storage/resolve/main/images/{article_id[:3]}/{article_id}.jpg
+```
+
+No need to serve images from the API.
+
+### 3. Connect the Frontend to Your API
+
+Once your Space is live, open a PR that updates one line in `app.js`:
+
+```javascript
+// Change this:
+const API_BASE = "";
+
+// To your Space URL:
+const API_BASE = "https://your-space-url.hf.space";
+```
+
+That's it. The frontend already handles the API calls, error states, and precomputed fallback.
+
+### 4. Fix PR #2
+
+Your current PR needs to follow the repo's PR template before it can merge. Please update it with:
+
+- **Descriptive title** — what does this PR add and why?
+- **Summary** — 2-3 sentences on the motivation
+- **Changes** — what files were added/modified and what they do
+- **Testing** — how you verified it works
+- **Code Quality** — AI attribution, no loose code, etc.
+
+The PR template auto-populates when you create a PR — please fill in all sections. Good PR documentation is part of the rubric and reflects well on both of us.
+
+### 5. Enable GitHub Pages
+
+After PR #3 merges:
+
+1. Repo **Settings > Pages**
 2. Source: **Deploy from a branch**
 3. Branch: `main`, folder: `/ (root)`
-4. Save
+4. Save — site goes live at `https://one-haut-encoded.github.io`
 
-Site goes live at `https://one-haut-encoded.github.io`.
+### 6. Written Report
 
-### 4. Verify the Live Site
-
-After Pages is enabled, check:
-- [ ] Style profiles load and show purchase history
-- [ ] Model toggle (Popularity / KNN / NCF) switches recommendations
-- [ ] "Curate Your Look" lets you select items and get recommendations (requires API to be running)
-- [ ] Methodology, pipeline, and results sections render correctly
-- [ ] Footer links to GitHub and HF Hub work
-
-### 5. Written Report
-
-We still need the final report. The rubric requires these sections:
+We need the final report. Required sections per the rubric:
 
 - Problem Statement
 - Data Sources
-- Related Work
-- Evaluation Strategy & Metrics
-- Modeling Approach (all 3: Popularity baseline, KNN, NCF)
-- Data Processing Pipeline
+- Related Work (review prior approaches to fashion recommendation)
+- Evaluation Strategy & Metrics (justify HR@K, NDCG@K, Coverage, Novelty)
+- Modeling Approach (Popularity baseline, KNN, NCF — all 3 required)
+- Data Processing Pipeline (subsample → features → temporal split)
 - Hyperparameter Tuning Strategy
-- Results (quantitative comparison + visualizations)
-- Error Analysis (5 specific mispredictions with root causes)
-- Experiment Write-Up (our ablation study: metadata vs. visual features)
+- Results (8-model comparison table + visualizations)
+- Error Analysis (5 specific mispredictions, root causes, mitigations)
+- Experiment Write-Up (ablation study: metadata vs. visual features)
 - Conclusions & Future Work
 - Commercial Viability Statement
 - Ethics Statement
 
 ---
 
-## Git Workflow Reminder
-
-**Main branch is protected.** Every change must go through a PR.
-
-1. Create a feature branch: `git checkout -b feature/your-feature-name`
-2. Push to your branch: `git push -u origin feature/your-feature-name`
-3. Open a PR — fill in **all** sections of the PR template
-4. Both team members must approve before merge
-5. PR checks must pass: PR Summary, Secret Scan, Large File Scan, AI Attribution
-
-**AI attribution:** Every new `.py` file must have this at the top:
-```python
-# AI-assisted (Claude Code, claude.ai) -- https://claude.ai
-```
-
-**Never commit `data/` or `models/`** — they're gitignored. Never commit `.env` or credentials.
-
----
-
 ## Reference
 
-### API Endpoints (live at `https://dtanzillo-one-haut-encoded.hf.space`)
-
-| Endpoint | Description |
-|----------|-------------|
-| `GET /status` | Model load status |
-| `GET /recommend?customer_id=X&model=popularity\|knn\|ncf&k=12` | Recommendations for a customer |
-| `GET /purchase_history?customer_id=X` | Customer's purchase history |
-| `GET /recommend_from_selection?article_ids=X,Y,Z&k=12` | KNN recs from user-selected items |
-
-### Demo Users
-
-10 pre-selected users in `precomputed_recommendations.json`:
+### Demo Users (in `precomputed_recommendations.json`)
 
 | Style Profile | Purchases | Top Department |
 |---------------|-----------|----------------|
@@ -149,3 +202,18 @@ We still need the final report. The rubric requires these sections:
 | Popularity (global) | **0.0998** | 0.0145 | 0.0040 | 8.91 |
 | KNN (metadata) | 0.0921 | **0.0187** | **0.9920** | **11.85** |
 | NCF (+ metadata) | 0.0887 | 0.0178 | 0.8769 | 10.68 |
+
+### Git Workflow
+
+**Main branch is protected.** Every change goes through a PR with the template filled out.
+
+1. Feature branch: `git checkout -b feature/your-feature-name`
+2. Push: `git push -u origin feature/your-feature-name`
+3. Open PR — fill in **all** template sections
+4. Both team members approve
+5. CI checks pass: PR Summary, Secret Scan, Large File Scan, AI Attribution
+
+**AI attribution** on every new `.py` file:
+```python
+# AI-assisted (Claude Code, claude.ai) -- https://claude.ai
+```
