@@ -1,287 +1,219 @@
 # Next Steps — Alex
 
-## What's Done
+## Current State
 
-Dominic set up the full ML pipeline. Everything below is trained, evaluated, and saved locally (models + data are gitignored).
+The frontend is built and ready to merge. The backend (HF Spaces API) is yours to integrate with your existing asset bucket. Here's everything you need.
 
-### Data
-- **Raw data** downloaded from Kaggle H&M competition into `data/raw/` (articles.csv, customers.csv, transactions_train.csv, images/)
-- **Subsampled** to a development set: ~373K transactions, 25K customers, 3K articles (`data/processed/`)
-- **Temporal train/test split**: last 14 days held out as test set
-- **Full catalog parquets** saved in `data/processed/` for fast loading (articles_full.parquet, customers_full.parquet, transactions_full.parquet)
-- **ResNet50 image embeddings** extracted for all 105,542 articles (2048-dim vectors, `data/processed/image_embeddings.npy`)
-- **Article-to-embedding index** mapping at `data/processed/article_embedding_map.csv`
-- **10 demo users** pre-generated at `data/processed/demo_users.json` with purchase histories and image paths
+### Architecture
 
-### Models (all saved in `models/`, gitignored)
-| Model | File | Description |
-|-------|------|-------------|
-| Popularity Baseline | `models/baseline/popularity.pkl` | Top-N most purchased globally or per department |
-| KNN (metadata) | `models/knn/knn.pkl` | Cosine similarity on one-hot article metadata |
-| KNN + images | `models/knn/knn_visual.pkl` | Same + ResNet50 embeddings |
-| NCF base | `models/ncf/ncf.pt` | User + item embeddings only |
-| NCF + metadata | `models/ncf/ncf-meta.pt` | + one-hot article metadata |
-| NCF + visual | `models/ncf/ncf-visual.pt` | + ResNet50 image embeddings |
-| NCF full | `models/ncf/ncf-full.pt` | + metadata + image embeddings |
+```
+GitHub Pages (static frontend)  →  HF Space (live model API)
+  one-haut-encoded.github.io        your-hf-space.hf.space
+        ↓                                   ↓
+  precomputed fallback             loads models from DTanzillo/one-haut-encoded
+  images from your HF bucket       serves /recommend, /purchase_history, etc.
+```
 
-Each NCF model has a `_mappings.pkl` file with `user_to_idx` and `item_to_idx` dicts.
+### What's Done
 
-### Evaluation Results (K=12, on held-out test set)
-
-| Model | HR@12 | NDCG@12 | Coverage | Novelty |
-|-------|-------|---------|----------|---------|
-| Popularity (global) | 0.0998 | 0.0145 | 0.0040 | 8.91 |
-| Popularity (dept) | 0.0898 | 0.0159 | 0.2365 | 10.02 |
-| KNN (metadata) | 0.0921 | 0.0187 | 0.9920 | 11.85 |
-| KNN (+ images) | 0.0920 | 0.0187 | 0.9923 | 11.85 |
-| NCF (base) | 0.0724 | 0.0136 | 0.7215 | 10.33 |
-| NCF (+ meta) | **0.0887** | **0.0178** | 0.8769 | 10.68 |
-| NCF (+ visual) | 0.0718 | 0.0134 | 0.6891 | 10.18 |
-| NCF (full) | 0.0873 | 0.0171 | 0.7942 | 10.45 |
-
-**Key findings:**
-- Popularity global has the highest raw hit rate (0.0998) — it just recommends what everyone buys
-- KNN has the best NDCG (0.0187) and near-perfect coverage (99%) — most diverse recommendations
-- NCF + meta is the best deep learning variant — metadata features help a lot
-- Visual features alone don't improve over ID-only baselines — the hypothesis that images help for cold-start still needs testing
-- KNN wins on coverage + novelty (recommends across the whole catalog, not just popular items)
-
-### Scripts
-| Script | What it does |
-|--------|-------------|
-| `scripts/subsample.py` | Filters raw H&M data to dev subset |
-| `scripts/build_features.py` | Builds interaction matrix + temporal train/test split |
-| `scripts/extract_image_features.py` | ResNet50 feature extraction (full catalog, GPU with 50% VRAM cap) |
-| `scripts/train_baseline.py` | Trains popularity recommender |
-| `scripts/train_knn.py` | Trains KNN content-based (use `--images` for visual variant) |
-| `scripts/train_ncf.py` | Trains NCF (use `--meta`, `--images`, or both for variants) |
-| `scripts/evaluate.py` | Computes HR@12, NDCG@12, Coverage, Novelty |
+| Component | Status | Owner |
+|-----------|--------|-------|
+| Data pipeline + training scripts | Complete | Dominic |
+| 7 trained models on HF Hub | Complete | `DTanzillo/one-haut-encoded` |
+| Frontend (GitHub Pages) | Complete, PR #3 | Dominic |
+| Precomputed fallback JSON | Complete | In repo root |
+| Product image bucket | Complete | `alexoh2020/onehautapp-storage` |
+| HF Spaces backend API | **Yours to build** | Alex |
 
 ---
 
 ## What You Need to Do
 
-### 1. Build the Live Website
+### 1. Review and Approve PR #3 (Frontend)
 
-Build an interactive web app where a user can test the recommendation system. This is the main deliverable.
+PR #3 adds the static frontend. Please review it and leave substantive comments — the rubric grades on PR review quality. When reviewing, consider:
 
-**Core features:**
-- User can select from demo users or enter a customer ID
-- Display that customer's purchase history as a grid of product images
-- Show recommendations from the best model (NCF + meta or KNN) as product image cards
-- Let user toggle between models to compare recommendations visually
-- Each product card shows: image, product name, product type, colour, department
+- Does the frontend accurately represent the evaluation results?
+- Is the UX clear for someone unfamiliar with the project?
+- Any edge cases in the JS (error handling, empty states)?
+- Does the precomputed fallback data look correct?
 
-**Pre-built assets for you:**
-- `data/processed/demo_users.json` — 10 pre-selected demo users with varied purchase histories (heavy/medium/light buyers across different departments)
-- Product images at `data/raw/images/{article_id[:3]}/{article_id}.jpg` (e.g., article `0751471001` is at `images/075/0751471001.jpg`)
-- Full catalog metadata in `data/processed/articles_full.parquet`
-- All models have a `.recommend(customer_id, k=12)` method (baseline + KNN) or can be wrapped (NCF)
+### 2. Build the HF Spaces API Backend
 
-**Loading models in your app:**
+The frontend expects a FastAPI backend with these endpoints. You can use your existing `alexoh2020/onehautapp` Space or create a new one — just make sure it serves these routes:
+
+#### Required Endpoints
+
+**`GET /recommend`**
+```
+Params: customer_id (str), model (str: "popularity"|"knn"|"ncf"), k (int, default 12)
+Response: { "customer_id": str, "model": str, "count": int, "items": [...] }
+
+Each item: { "article_id": str, "product_name": str, "product_type": str, "colour": str, "department": str }
+```
+
+**`GET /purchase_history`**
+```
+Params: customer_id (str), max_items (int, default 24)
+Response: { "customer_id": str, "count": int, "items": [...] }
+```
+
+**`GET /recommend_from_selection`**
+This powers the "Curate Your Look" feature where users select items and get personalized recommendations.
+```
+Params: article_ids (str, comma-separated), k (int, default 12)
+Response: { "count": int, "items": [...] }
+
+Implementation: build a KNN user profile from the selected article feature vectors,
+find nearest neighbors, exclude the selected items, return top-k.
+```
+
+**`GET /status`**
+```
+Response: { "models_loaded": [...], "articles_count": int, "interactions_count": int }
+```
+
+#### CORS
+
+The API must allow requests from `https://one-haut-encoded.github.io`. Add this middleware:
 ```python
-# Baseline / KNN — pickle load, call .recommend()
+from fastapi.middleware.cors import CORSMiddleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["https://one-haut-encoded.github.io", "http://localhost:8080"],
+    allow_methods=["GET"],
+    allow_headers=["*"],
+)
+```
+
+#### Loading Models
+
+All models are on HF Hub at `DTanzillo/one-haut-encoded`. Download on startup:
+
+```python
+from huggingface_hub import snapshot_download
+snapshot_download(repo_id="DTanzillo/one-haut-encoded", repo_type="model", local_dir="/app/data")
+```
+
+Then load:
+```python
+# Popularity / KNN — pickle, call .recommend()
 import pickle
+with open("models/baseline/popularity.pkl", "rb") as f:
+    pop_model = pickle.load(f)
 with open("models/knn/knn.pkl", "rb") as f:
     knn_model = pickle.load(f)
-recs = knn_model.recommend(customer_id, k=12)  # returns list of article_ids
 
-# NCF — load PyTorch model, score all items for a user
+# NCF — PyTorch checkpoint
 import torch
-from scripts.train_ncf import NCFModel
+from train_ncf import NCFModel
 model = NCFModel(n_users=23373, n_items=2998, embed_dim=64, n_meta_features=206)
 model.load_state_dict(torch.load("models/ncf/ncf-meta.pt", map_location="cpu"))
 model.eval()
-# See scripts/evaluate.py for the full recommend wrapper pattern
 ```
 
-### 2. Deployment — HF Spaces Backend + GitHub Pages Frontend
+**Important:** The pickle files reference class definitions from `scripts/train_baseline.py`, `scripts/train_knn.py`, and `scripts/train_ncf.py`. You need these files accessible to unpickle. Either copy them into your Space or register the classes on `__main__` before loading.
 
-The site is `OneHautEncoded.github.io` (GitHub Pages = static files only). Models need Python to run, so the architecture is:
+#### Image Serving
 
+Your bucket at `alexoh2020/onehautapp-storage` already has the images. The frontend loads them directly from the HF CDN:
 ```
-GitHub Pages (frontend HTML/CSS/JS)  →  HF Spaces (model API backend)
-   one-haut-encoded.github.io              *.hf.space
-```
-
-All models, processed data, and 3K product images are uploaded to HF Hub at:
-**https://huggingface.co/DTanzillo/one-haut-encoded**
-
-Alex doesn't need Kaggle, a GPU, or to retrain anything.
-
-#### Step 1: Get the data
-
-```bash
-pip install huggingface_hub
-python scripts/download_from_hf.py
+https://huggingface.co/datasets/alexoh2020/onehautapp-storage/resolve/main/images/{article_id[:3]}/{article_id}.jpg
 ```
 
-This downloads all models and processed data from HF Hub (~300 MB). No retraining needed.
+No need to serve images from the API.
 
-For product images (needed for the frontend), download from Kaggle:
-```bash
-pip install kaggle
-# Accept competition rules at kaggle.com/competitions/h-and-m-personalized-fashion-recommendations/rules
-kaggle competitions download -c h-and-m-personalized-fashion-recommendations
-unzip h-and-m-personalized-fashion-recommendations.zip -d data/raw/
-```
-Image path pattern: `data/raw/images/{article_id[:3]}/{article_id}.jpg`
+### 3. Connect the Frontend to Your API
 
-#### Step 2: Set up the HF Space (model API backend)
+Once your Space is live, open a PR that updates one line in `app.js`:
 
-1. Go to [huggingface.co/spaces](https://huggingface.co/spaces), click **Create new Space**
-2. Name: `one-haut-encoded`, SDK: **Gradio** (or FastAPI), Visibility: **Public**
-3. Clone the space:
-   ```bash
-   git clone https://huggingface.co/spaces/YOUR_HF_USERNAME/one-haut-encoded
-   cd one-haut-encoded
-   ```
-4. Create `app.py` that:
-   - On startup, downloads models from `DTanzillo/one-haut-encoded` via `huggingface_hub`
-   - Exposes endpoints: `/recommend?customer_id=X&model=popularity|knn|ncf`
-   - Returns JSON: article IDs, metadata, and HF-hosted image URLs
-5. Create `requirements.txt`:
-   ```
-   torch
-   scikit-learn
-   pandas
-   numpy
-   huggingface_hub
-   gradio
-   ```
-6. Push — HF builds and deploys automatically:
-   ```bash
-   git add . && git commit -m "Initial app" && git push
-   ```
-7. API is live at `https://YOUR_HF_USERNAME-one-haut-encoded.hf.space`
+```javascript
+// Change this:
+const API_BASE = "";
 
-**Loading models in the HF Space app:**
-```python
-# Baseline / KNN — pickle load, call .recommend()
-import pickle
-with open("models/knn/knn.pkl", "rb") as f:
-    knn_model = pickle.load(f)
-recs = knn_model.recommend(customer_id, k=12)  # returns list of article_ids
-
-# NCF — load PyTorch model, score all items for a user
-import torch
-from scripts.train_ncf import NCFModel
-model = NCFModel(n_users=23373, n_items=2998, embed_dim=64, n_meta_features=206)
-model.load_state_dict(torch.load("models/ncf/ncf-meta.pt", map_location="cpu"))
-model.eval()
-# See scripts/evaluate.py for the full NCF recommend wrapper pattern
+// To your Space URL:
+const API_BASE = "https://your-space-url.hf.space";
 ```
 
-#### Step 3: Build the GitHub Pages frontend
+That's it. The frontend already handles the API calls, error states, and precomputed fallback.
 
-The frontend is static HTML/CSS/JS in the repo root.
+### 4. Fix PR #2
 
-1. Create a feature branch:
-   ```bash
-   cd OneHautEncoded.github.io
-   git checkout -b feature/frontend
-   ```
-2. Build `index.html` with:
-   - User selector dropdown (pre-loaded with 10 demo users)
-   - "Purchase History" section — product image grid
-   - "Recommendations" section — model toggle (Popularity / KNN / NCF)
-   - Product cards: image + name + type + colour + department
-3. JS fetches from the HF Space API:
-   ```javascript
-   const API = "https://YOUR_HF_USERNAME-one-haut-encoded.hf.space";
-   const res = await fetch(`${API}/recommend?customer_id=${uid}&model=knn`);
-   const recs = await res.json();
-   ```
-4. **Static fallback** (works even without the API):
-   `data/processed/precomputed_recommendations.json` has pre-computed recommendations for all 10 demo users with full metadata. Load it directly:
-   ```javascript
-   const data = await fetch("data/processed/precomputed_recommendations.json")
-     .then(r => r.json());
-   // data[0].recommendations.knn = [{article_id, product_type, colour, ...}, ...]
-   ```
-5. Product images — reference from HF Hub CDN (no need to commit images to the repo):
-   ```
-   https://huggingface.co/DTanzillo/one-haut-encoded/resolve/main/data/images/{article_id[:3]}/{article_id}.jpg
-   ```
-   Example: `https://huggingface.co/DTanzillo/one-haut-encoded/resolve/main/data/images/075/0751471001.jpg`
+Your current PR needs to follow the repo's PR template before it can merge. Please update it with:
 
-#### Step 4: Enable GitHub Pages
+- **Descriptive title** — what does this PR add and why?
+- **Summary** — 2-3 sentences on the motivation
+- **Changes** — what files were added/modified and what they do
+- **Testing** — how you verified it works
+- **Code Quality** — AI attribution, no loose code, etc.
 
-1. Go to repo **Settings > Pages**
+The PR template auto-populates when you create a PR — please fill in all sections. Good PR documentation is part of the rubric and reflects well on both of us.
+
+### 5. Enable GitHub Pages
+
+After PR #3 merges:
+
+1. Repo **Settings > Pages**
 2. Source: **Deploy from a branch**
 3. Branch: `main`, folder: `/ (root)`
 4. Save — site goes live at `https://one-haut-encoded.github.io`
 
-#### Step 5: Push & PR
+### 6. Written Report
 
-```bash
-git add index.html style.css app.js  # whatever frontend files
-git push -u origin feature/frontend
-# Open PR on GitHub, fill in the template, Dominic reviews and merges
-```
+We need the final report. Required sections per the rubric:
 
-### 3. Git Workflow
+- Problem Statement
+- Data Sources
+- Related Work (review prior approaches to fashion recommendation)
+- Evaluation Strategy & Metrics (justify HR@K, NDCG@K, Coverage, Novelty)
+- Modeling Approach (Popularity baseline, KNN, NCF — all 3 required)
+- Data Processing Pipeline (subsample → features → temporal split)
+- Hyperparameter Tuning Strategy
+- Results (8-model comparison table + visualizations)
+- Error Analysis (5 specific mispredictions, root causes, mitigations)
+- Experiment Write-Up (ablation study: metadata vs. visual features)
+- Conclusions & Future Work
+- Commercial Viability Statement
+- Ethics Statement
 
-**Important:** Main branch is protected. You must:
-1. Accept the collaborator invite on GitHub (check your email)
-2. Create a feature branch: `git checkout -b feature/frontend`
-3. Push to your branch: `git push -u origin feature/frontend`
-4. Open a PR on GitHub — the PR template auto-populates
-5. Fill in Summary, Changes, Testing, and Code Quality sections
-6. Dominic reviews and approves
-7. PR checks must pass: PR Summary, Secret Scan, Large File Scan, AI Attribution
+---
 
-**AI attribution:** Every new `.py` file must have this at the top:
+## Reference
+
+### Demo Users (in `precomputed_recommendations.json`)
+
+| Style Profile | Purchases | Top Department |
+|---------------|-----------|----------------|
+| The Everyday Essential | 137 | Casual Lingerie |
+| Denim & Done | 68 | Denim Trousers |
+| The Basics Builder | 70 | Heavy Basic Jersey |
+| Dress to Impress | 12 | Dress |
+| Athleisure | 17 | Ladies Sport Bras |
+| Beach & Beyond | 13 | Swimwear |
+| Active Chic | 15 | Ladies Sport Bras |
+| Capsule Wardrobe | 5 | Light Basic Jersey |
+| Resort Ready | 8 | Swimwear |
+| The Tailored Edit | 5 | Trouser |
+
+### Evaluation Results (K=12)
+
+| Model | HR@12 | NDCG@12 | Coverage | Novelty |
+|-------|-------|---------|----------|---------|
+| Popularity (global) | **0.0998** | 0.0145 | 0.0040 | 8.91 |
+| KNN (metadata) | 0.0921 | **0.0187** | **0.9920** | **11.85** |
+| NCF (+ metadata) | 0.0887 | 0.0178 | 0.8769 | 10.68 |
+
+### Git Workflow
+
+**Main branch is protected.** Every change goes through a PR with the template filled out.
+
+1. Feature branch: `git checkout -b feature/your-feature-name`
+2. Push: `git push -u origin feature/your-feature-name`
+3. Open PR — fill in **all** template sections
+4. Both team members approve
+5. CI checks pass: PR Summary, Secret Scan, Large File Scan, AI Attribution
+
+**AI attribution** on every new `.py` file:
 ```python
 # AI-assisted (Claude Code, claude.ai) -- https://claude.ai
 ```
-
-**Never commit `data/` or `models/`** — they're gitignored. Never commit `.env` or credentials.
-
-### 3. Getting the Data on Your Machine
-
-You need to download the H&M dataset and run the pipeline locally:
-```bash
-pip install -r requirements.txt
-pip install kaggle
-
-# For CUDA PyTorch (if you have a GPU):
-pip install torch torchvision --force-reinstall --index-url https://download.pytorch.org/whl/cu126
-
-# Download data (accept competition rules on kaggle.com first!)
-# Place your kaggle.json in ~/.kaggle/
-kaggle competitions download -c h-and-m-personalized-fashion-recommendations
-mkdir -p data/raw
-unzip h-and-m-personalized-fashion-recommendations.zip -d data/raw/
-
-# Run full pipeline
-python scripts/subsample.py
-python scripts/build_features.py
-python scripts/extract_image_features.py
-python scripts/train_baseline.py
-python scripts/train_knn.py
-python scripts/train_knn.py --images
-python scripts/train_ncf.py
-python scripts/train_ncf.py --meta
-python scripts/train_ncf.py --images
-python scripts/train_ncf.py --meta --images
-```
-
-### 4. Demo Users Reference
-
-10 pre-selected users in `data/processed/demo_users.json`:
-
-| Customer ID (truncated) | Purchases | Unique Articles | Top Department |
-|--------------------------|-----------|-----------------|----------------|
-| 4308983955... | 137 | 85 | Casual Lingerie |
-| 7f0ac43942... | 68 | 53 | Denim Trousers |
-| a6c1c70b77... | 70 | 15 | Heavy Basic Jersey |
-| bed7af8414... | 12 | 12 | Dress |
-| 71d4eb174a... | 17 | 16 | Ladies Sport Bras |
-| dfa8d2952c... | 13 | 13 | Swimwear |
-| caf967aa1f... | 15 | 10 | Ladies Sport Bras |
-| 38cce1f033... | 5 | 5 | Light Basic Jersey |
-| 9420694f62... | 8 | 8 | Swimwear |
-| 4330e0e73e... | 5 | 3 | Trouser |
-
-These span heavy buyers (137 purchases) to light buyers (5 purchases) across diverse departments — good for demonstrating how recommendations differ by user profile.
