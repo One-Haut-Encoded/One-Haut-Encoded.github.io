@@ -1,9 +1,12 @@
 // AI-assisted (Claude Code, claude.ai) -- https://claude.ai
 
 // ── Configuration ────────────────────────────────────────────
-// When deployed, set this to your HF Space URL for live inference.
+// Set API_BASE to the HF Space URL once the backend is deployed.
 // When empty, falls back to precomputed static data.
-const API_BASE = "https://dtanzillo-one-haut-encoded.hf.space";
+const API_BASE = "";
+
+// Product images served from HF dataset bucket.
+const IMAGE_CDN = "https://huggingface.co/datasets/alexoh2020/onehautapp-storage/resolve/main/images";
 
 const MODEL_KEYS = { popularity: "popularity", knn: "knn", ncf: "ncf_meta" };
 const MODEL_NAMES = { popularity: "Popularity", knn: "KNN", ncf: "NCF + Metadata" };
@@ -258,7 +261,8 @@ async function getCuratedRecs() {
 
 // ── Card Rendering ───────────────────────────────────────────
 function imageUrl(articleId) {
-  return `images/${articleId.substring(0, 3)}/${articleId}.jpg`;
+  const prefix = articleId.substring(0, 3);
+  return `${IMAGE_CDN}/${prefix}/${articleId}.jpg`;
 }
 
 function createCard(item, selectable) {
