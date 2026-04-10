@@ -1,0 +1,3970 @@
+[
+  {
+    "customer_id": "4308983955108b3af43ec57f0557211e44462a5633238351fff14c8b51f16093",
+    "customer_id_short": "43089839...",
+    "n_purchases": 137,
+    "top_departments": {
+      "Casual Lingerie": 35,
+      "Clean Lingerie": 26,
+      "Basic 1": 16
+    },
+    "purchase_history": [
+      {
+        "article_id": "0832253001",
+        "product_type": "Trousers",
+        "colour": "Light Beige",
+        "department": "Trouser",
+        "product_name": "Eliza linen slack",
+        "image_path": "data/images/083/0832253001.jpg"
+      },
+      {
+        "article_id": "0851317001",
+        "product_type": "Skirt",
+        "colour": "White",
+        "department": "Shorts & Skirts",
+        "product_name": "Grapefruit skirt",
+        "image_path": "data/images/085/0851317001.jpg"
+      },
+      {
+        "article_id": "0717464001",
+        "product_type": "Vest top",
+        "colour": "Black",
+        "department": "Basic 1",
+        "product_name": "Nicky long.",
+        "image_path": "data/images/071/0717464001.jpg"
+      },
+      {
+        "article_id": "0843373003",
+        "product_type": "Skirt",
+        "colour": "Dark Blue",
+        "department": "Shorts & Skirts",
+        "product_name": "Jorah romantic skirt",
+        "image_path": "data/images/084/0843373003.jpg"
+      },
+      {
+        "article_id": "0884993001",
+        "product_type": "Shorts",
+        "colour": "Blue",
+        "department": "Shorts",
+        "product_name": "Perrie HW Dnm Cutlines Shorts",
+        "image_path": "data/images/088/0884993001.jpg"
+      },
+      {
+        "article_id": "0717464002",
+        "product_type": "Vest top",
+        "colour": "White",
+        "department": "Basic 1",
+        "product_name": "Nicky long.",
+        "image_path": "data/images/071/0717464002.jpg"
+      },
+      {
+        "article_id": "0905916001",
+        "product_type": "Skirt",
+        "colour": "Light Beige",
+        "department": "Skirt",
+        "product_name": "Juliette",
+        "image_path": "data/images/090/0905916001.jpg"
+      },
+      {
+        "article_id": "0832253002",
+        "product_type": "Trousers",
+        "colour": "Yellowish Brown",
+        "department": "Trouser",
+        "product_name": "Eliza linen slack",
+        "image_path": "data/images/083/0832253002.jpg"
+      },
+      {
+        "article_id": "0855793005",
+        "product_type": "T-shirt",
+        "colour": "Light Purple",
+        "department": "Basic 1",
+        "product_name": "Vickan baby tee",
+        "image_path": "data/images/085/0855793005.jpg"
+      },
+      {
+        "article_id": "0884847001",
+        "product_type": "Dress",
+        "colour": "Dark Orange",
+        "department": "Dress",
+        "product_name": "Light my fire kaftan",
+        "image_path": "data/images/088/0884847001.jpg"
+      },
+      {
+        "article_id": "0816521004",
+        "product_type": "Trousers",
+        "colour": "Dark Beige",
+        "department": "Trouser",
+        "product_name": "Tiblisi",
+        "image_path": "data/images/081/0816521004.jpg"
+      },
+      {
+        "article_id": "0829145007",
+        "product_type": "Dress",
+        "colour": "Black",
+        "department": "Dresses",
+        "product_name": "SS London dress",
+        "image_path": "data/images/082/0829145007.jpg"
+      },
+      {
+        "article_id": "0850917001",
+        "product_type": "Shirt",
+        "colour": "White",
+        "department": "Blouse",
+        "product_name": "Sadie Shirt",
+        "image_path": "data/images/085/0850917001.jpg"
+      },
+      {
+        "article_id": "0868161002",
+        "product_type": "Blouse",
+        "colour": "Light Pink",
+        "department": "Blouse",
+        "product_name": "Gale Blouse",
+        "image_path": "data/images/086/0868161002.jpg"
+      },
+      {
+        "article_id": "0868751001",
+        "product_type": "Underwear bottom",
+        "colour": "Light Orange",
+        "department": "Shopbasket Lingerie",
+        "product_name": "OP Brazilian 4pk",
+        "image_path": "data/images/086/0868751001.jpg"
+      }
+    ],
+    "recommendations": {
+      "popularity": [
+        {
+          "article_id": "0751471001",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Trouser",
+          "product_name": "Pluto RW slacks (1)",
+          "image_path": "data/images/075/0751471001.jpg"
+        },
+        {
+          "article_id": "0916468003",
+          "product_type": "Cardigan",
+          "colour": "Blue",
+          "department": "Knitwear",
+          "product_name": "Bailey",
+          "image_path": "data/images/091/0916468003.jpg"
+        },
+        {
+          "article_id": "0896152002",
+          "product_type": "T-shirt",
+          "colour": "Black",
+          "department": "Knitwear",
+          "product_name": "Amelie",
+          "image_path": "data/images/089/0896152002.jpg"
+        },
+        {
+          "article_id": "0706016001",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Trousers",
+          "product_name": "Jade HW Skinny Denim TRS",
+          "image_path": "data/images/070/0706016001.jpg"
+        },
+        {
+          "article_id": "0751471043",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Trouser",
+          "product_name": "Pluto RW slacks (1)",
+          "image_path": "data/images/075/0751471043.jpg"
+        },
+        {
+          "article_id": "0812668001",
+          "product_type": "Sarong",
+          "colour": "White",
+          "department": "Swimwear",
+          "product_name": "B Lola Beach Dress",
+          "image_path": "data/images/081/0812668001.jpg"
+        },
+        {
+          "article_id": "0915529003",
+          "product_type": "Sweater",
+          "colour": "Black",
+          "department": "Knitwear",
+          "product_name": "Liliana",
+          "image_path": "data/images/091/0915529003.jpg"
+        },
+        {
+          "article_id": "0918292001",
+          "product_type": "Leggings/Tights",
+          "colour": "Black",
+          "department": "Ladies Sport Bottoms",
+          "product_name": "STRONG HW seamless tights",
+          "image_path": "data/images/091/0918292001.jpg"
+        },
+        {
+          "article_id": "0610776002",
+          "product_type": "T-shirt",
+          "colour": "Black",
+          "department": "Jersey Basic",
+          "product_name": "Tilly (1)",
+          "image_path": "data/images/061/0610776002.jpg"
+        },
+        {
+          "article_id": "0448509014",
+          "product_type": "Trousers",
+          "colour": "Blue",
+          "department": "Trousers",
+          "product_name": "Perrie Slim Mom Denim TRS",
+          "image_path": "data/images/044/0448509014.jpg"
+        },
+        {
+          "article_id": "0896169002",
+          "product_type": "Cardigan",
+          "colour": "Grey",
+          "department": "Knitwear",
+          "product_name": "Hilton",
+          "image_path": "data/images/089/0896169002.jpg"
+        },
+        {
+          "article_id": "0803757001",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Jersey Basic",
+          "product_name": "Bradley trousers",
+          "image_path": "data/images/080/0803757001.jpg"
+        }
+      ],
+      "knn": [
+        {
+          "article_id": "0694848001",
+          "product_type": "Bra",
+          "colour": "Black",
+          "department": "Casual Lingerie",
+          "product_name": "Ellen 2pk ct rio wireless",
+          "image_path": "data/images/069/0694848001.jpg"
+        },
+        {
+          "article_id": "0723469001",
+          "product_type": "Bra",
+          "colour": "Black",
+          "department": "Casual Lingerie",
+          "product_name": "Kelly 2pk Melbourne push ct",
+          "image_path": "data/images/072/0723469001.jpg"
+        },
+        {
+          "article_id": "0820572001",
+          "product_type": "Bra",
+          "colour": "Black",
+          "department": "Casual Lingerie",
+          "product_name": "Liza Padded Milano 2pk",
+          "image_path": "data/images/082/0820572001.jpg"
+        },
+        {
+          "article_id": "0894756002",
+          "product_type": "Bra",
+          "colour": "Black",
+          "department": "Casual Lingerie",
+          "product_name": "Ilse padded softbra",
+          "image_path": "data/images/089/0894756002.jpg"
+        },
+        {
+          "article_id": "0846753002",
+          "product_type": "Bra",
+          "colour": "Black",
+          "department": "Casual Lingerie",
+          "product_name": "Evie Long Padded Softbra",
+          "image_path": "data/images/084/0846753002.jpg"
+        },
+        {
+          "article_id": "0736923003",
+          "product_type": "Bra",
+          "colour": "Black",
+          "department": "Casual Lingerie",
+          "product_name": "Dusk Padded T-shirt",
+          "image_path": "data/images/073/0736923003.jpg"
+        },
+        {
+          "article_id": "0557994003",
+          "product_type": "Bra",
+          "colour": "Black",
+          "department": "Casual Lingerie",
+          "product_name": "Liza 2p padded wireless rio mc",
+          "image_path": "data/images/055/0557994003.jpg"
+        },
+        {
+          "article_id": "0859736002",
+          "product_type": "Bra",
+          "colour": "Black",
+          "department": "Casual Lingerie",
+          "product_name": "Coachella C&S padded wire",
+          "image_path": "data/images/085/0859736002.jpg"
+        },
+        {
+          "article_id": "0903306001",
+          "product_type": "Bra",
+          "colour": "Black",
+          "department": "Casual Lingerie",
+          "product_name": "Uma Softbra Rib Mia Conscious",
+          "image_path": "data/images/090/0903306001.jpg"
+        },
+        {
+          "article_id": "0878733002",
+          "product_type": "Bra",
+          "colour": "Black",
+          "department": "Casual Lingerie",
+          "product_name": "Mimosa Malta Bandeau",
+          "image_path": "data/images/087/0878733002.jpg"
+        },
+        {
+          "article_id": "0859737002",
+          "product_type": "Bra",
+          "colour": "Black",
+          "department": "Casual Lingerie",
+          "product_name": "Coachella padded softbra",
+          "image_path": "data/images/085/0859737002.jpg"
+        },
+        {
+          "article_id": "0843777005",
+          "product_type": "Bra",
+          "colour": "Black",
+          "department": "Casual Lingerie",
+          "product_name": "Anglaise padded softbra OPT3",
+          "image_path": "data/images/084/0843777005.jpg"
+        }
+      ],
+      "ncf_meta": [
+        {
+          "article_id": "0855080008",
+          "product_type": "Unknown",
+          "colour": "Beige",
+          "department": "Clean Lingerie",
+          "product_name": "Frida push up seamless",
+          "image_path": "data/images/085/0855080008.jpg"
+        },
+        {
+          "article_id": "0700701006",
+          "product_type": "Unknown",
+          "colour": "Yellowish Brown",
+          "department": "Expressive Lingerie",
+          "product_name": "OP T-shirt Milano",
+          "image_path": "data/images/070/0700701006.jpg"
+        },
+        {
+          "article_id": "0855080002",
+          "product_type": "Unknown",
+          "colour": "Grey",
+          "department": "Clean Lingerie",
+          "product_name": "Frida push up seamless",
+          "image_path": "data/images/085/0855080002.jpg"
+        },
+        {
+          "article_id": "0700701002",
+          "product_type": "Unknown",
+          "colour": "Black",
+          "department": "Expressive Lingerie",
+          "product_name": "OP T-shirt Milano",
+          "image_path": "data/images/070/0700701002.jpg"
+        },
+        {
+          "article_id": "0786187002",
+          "product_type": "Bra",
+          "colour": "Yellowish Brown",
+          "department": "Clean Lingerie",
+          "product_name": "Alexis wireless push fargo",
+          "image_path": "data/images/078/0786187002.jpg"
+        },
+        {
+          "article_id": "0854193004",
+          "product_type": "Bra",
+          "colour": "Light Orange",
+          "department": "Clean Lingerie",
+          "product_name": "Palermo coral padded wire",
+          "image_path": "data/images/085/0854193004.jpg"
+        },
+        {
+          "article_id": "0700701001",
+          "product_type": "Unknown",
+          "colour": "Light Beige",
+          "department": "Expressive Lingerie",
+          "product_name": "OP T-shirt Milano",
+          "image_path": "data/images/070/0700701001.jpg"
+        },
+        {
+          "article_id": "0855080009",
+          "product_type": "Unknown",
+          "colour": "Dark Purple",
+          "department": "Clean Lingerie",
+          "product_name": "Frida push up seamless",
+          "image_path": "data/images/085/0855080009.jpg"
+        },
+        {
+          "article_id": "0786187005",
+          "product_type": "Bra",
+          "colour": "Greenish Khaki",
+          "department": "Clean Lingerie",
+          "product_name": "Alexis wireless push fargo",
+          "image_path": "data/images/078/0786187005.jpg"
+        },
+        {
+          "article_id": "0854193003",
+          "product_type": "Bra",
+          "colour": "Pink",
+          "department": "Clean Lingerie",
+          "product_name": "Palermo coral padded wire",
+          "image_path": "data/images/085/0854193003.jpg"
+        },
+        {
+          "article_id": "0855080011",
+          "product_type": "Bra",
+          "colour": "White",
+          "department": "Clean Lingerie",
+          "product_name": "Frida push up seamless",
+          "image_path": "data/images/085/0855080011.jpg"
+        },
+        {
+          "article_id": "0859105004",
+          "product_type": "Shorts",
+          "colour": "Light Pink",
+          "department": "Shorts",
+          "product_name": "Lemon HW",
+          "image_path": "data/images/085/0859105004.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "customer_id": "7f0ac4394297dc4a885d3b9277ba526cbbfbf7fb7cae465b256ed8e55b864f03",
+    "customer_id_short": "7f0ac439...",
+    "n_purchases": 68,
+    "top_departments": {
+      "Denim Trousers": 16,
+      "Basic 1": 11,
+      "Jersey": 5
+    },
+    "purchase_history": [
+      {
+        "article_id": "0928040001",
+        "product_type": "Trousers",
+        "colour": "Light Yellow",
+        "department": "Jersey",
+        "product_name": "Bahamas trousers",
+        "image_path": "data/images/092/0928040001.jpg"
+      },
+      {
+        "article_id": "0909924001",
+        "product_type": "Trousers",
+        "colour": "Grey",
+        "department": "Loungewear",
+        "product_name": "LW (J) MAHALIA Consc Jogger",
+        "image_path": "data/images/090/0909924001.jpg"
+      },
+      {
+        "article_id": "0717490008",
+        "product_type": "T-shirt",
+        "colour": "Pink",
+        "department": "Basic 1",
+        "product_name": "Cat Tee.",
+        "image_path": "data/images/071/0717490008.jpg"
+      },
+      {
+        "article_id": "0856816001",
+        "product_type": "Dress",
+        "colour": "Light Pink",
+        "department": "Projects Dresses",
+        "product_name": "Hazel dress",
+        "image_path": "data/images/085/0856816001.jpg"
+      },
+      {
+        "article_id": "0717490083",
+        "product_type": "T-shirt",
+        "colour": "Blue",
+        "department": "Basic 1",
+        "product_name": "Cat Tee.",
+        "image_path": "data/images/071/0717490083.jpg"
+      },
+      {
+        "article_id": "0717490057",
+        "product_type": "T-shirt",
+        "colour": "Light Orange",
+        "department": "Basic 1",
+        "product_name": "Cat Tee.",
+        "image_path": "data/images/071/0717490057.jpg"
+      },
+      {
+        "article_id": "0835851001",
+        "product_type": "Blouse",
+        "colour": "White",
+        "department": "Blouse",
+        "product_name": "Nicla Blouse",
+        "image_path": "data/images/083/0835851001.jpg"
+      },
+      {
+        "article_id": "0914453001",
+        "product_type": "Leggings/Tights",
+        "colour": "Yellowish Brown",
+        "department": "Ladies Sport Bottoms",
+        "product_name": "Chia seamless tights",
+        "image_path": "data/images/091/0914453001.jpg"
+      },
+      {
+        "article_id": "0879282003",
+        "product_type": "Vest top",
+        "colour": "Greenish Khaki",
+        "department": "Tops Woven",
+        "product_name": "SPEARMINT TANK",
+        "image_path": "data/images/087/0879282003.jpg"
+      },
+      {
+        "article_id": "0906094003",
+        "product_type": "Cardigan",
+        "colour": "Light Blue",
+        "department": "Knitwear",
+        "product_name": "Katarina cardigan",
+        "image_path": "data/images/090/0906094003.jpg"
+      },
+      {
+        "article_id": "0905803002",
+        "product_type": "Trousers",
+        "colour": "Light Blue",
+        "department": "Denim Trousers",
+        "product_name": "Mom Fit Trash Consc.",
+        "image_path": "data/images/090/0905803002.jpg"
+      },
+      {
+        "article_id": "0874754001",
+        "product_type": "Sweater",
+        "colour": "Light Pink",
+        "department": "Knitwear",
+        "product_name": "Alexion sweater",
+        "image_path": "data/images/087/0874754001.jpg"
+      },
+      {
+        "article_id": "0799365027",
+        "product_type": "Trousers",
+        "colour": "Blue",
+        "department": "Denim Trousers",
+        "product_name": "Vintage Slim HW ankle consc.",
+        "image_path": "data/images/079/0799365027.jpg"
+      },
+      {
+        "article_id": "0874754002",
+        "product_type": "Sweater",
+        "colour": "Green",
+        "department": "Knitwear",
+        "product_name": "Alexion sweater",
+        "image_path": "data/images/087/0874754002.jpg"
+      },
+      {
+        "article_id": "0909924002",
+        "product_type": "Trousers",
+        "colour": "Blue",
+        "department": "Loungewear",
+        "product_name": "Mahalia Jogger (J)",
+        "image_path": "data/images/090/0909924002.jpg"
+      }
+    ],
+    "recommendations": {
+      "popularity": [
+        {
+          "article_id": "0751471001",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Trouser",
+          "product_name": "Pluto RW slacks (1)",
+          "image_path": "data/images/075/0751471001.jpg"
+        },
+        {
+          "article_id": "0916468003",
+          "product_type": "Cardigan",
+          "colour": "Blue",
+          "department": "Knitwear",
+          "product_name": "Bailey",
+          "image_path": "data/images/091/0916468003.jpg"
+        },
+        {
+          "article_id": "0896152002",
+          "product_type": "T-shirt",
+          "colour": "Black",
+          "department": "Knitwear",
+          "product_name": "Amelie",
+          "image_path": "data/images/089/0896152002.jpg"
+        },
+        {
+          "article_id": "0706016001",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Trousers",
+          "product_name": "Jade HW Skinny Denim TRS",
+          "image_path": "data/images/070/0706016001.jpg"
+        },
+        {
+          "article_id": "0751471043",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Trouser",
+          "product_name": "Pluto RW slacks (1)",
+          "image_path": "data/images/075/0751471043.jpg"
+        },
+        {
+          "article_id": "0812668001",
+          "product_type": "Sarong",
+          "colour": "White",
+          "department": "Swimwear",
+          "product_name": "B Lola Beach Dress",
+          "image_path": "data/images/081/0812668001.jpg"
+        },
+        {
+          "article_id": "0915529003",
+          "product_type": "Sweater",
+          "colour": "Black",
+          "department": "Knitwear",
+          "product_name": "Liliana",
+          "image_path": "data/images/091/0915529003.jpg"
+        },
+        {
+          "article_id": "0918292001",
+          "product_type": "Leggings/Tights",
+          "colour": "Black",
+          "department": "Ladies Sport Bottoms",
+          "product_name": "STRONG HW seamless tights",
+          "image_path": "data/images/091/0918292001.jpg"
+        },
+        {
+          "article_id": "0610776002",
+          "product_type": "T-shirt",
+          "colour": "Black",
+          "department": "Jersey Basic",
+          "product_name": "Tilly (1)",
+          "image_path": "data/images/061/0610776002.jpg"
+        },
+        {
+          "article_id": "0448509014",
+          "product_type": "Trousers",
+          "colour": "Blue",
+          "department": "Trousers",
+          "product_name": "Perrie Slim Mom Denim TRS",
+          "image_path": "data/images/044/0448509014.jpg"
+        },
+        {
+          "article_id": "0896169002",
+          "product_type": "Cardigan",
+          "colour": "Grey",
+          "department": "Knitwear",
+          "product_name": "Hilton",
+          "image_path": "data/images/089/0896169002.jpg"
+        },
+        {
+          "article_id": "0803757001",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Jersey Basic",
+          "product_name": "Bradley trousers",
+          "image_path": "data/images/080/0803757001.jpg"
+        }
+      ],
+      "knn": [
+        {
+          "article_id": "0677930023",
+          "product_type": "Sweater",
+          "colour": "White",
+          "department": "Basic 1",
+          "product_name": "Queen Sweater",
+          "image_path": "data/images/067/0677930023.jpg"
+        },
+        {
+          "article_id": "0889753008",
+          "product_type": "Sweater",
+          "colour": "Off White",
+          "department": "Basic 1",
+          "product_name": "Fazer balloon sweater",
+          "image_path": "data/images/088/0889753008.jpg"
+        },
+        {
+          "article_id": "0855239001",
+          "product_type": "Sweater",
+          "colour": "Black",
+          "department": "Basic 1",
+          "product_name": "Lisa LS",
+          "image_path": "data/images/085/0855239001.jpg"
+        },
+        {
+          "article_id": "0909869001",
+          "product_type": "Sweater",
+          "colour": "Black",
+          "department": "Basic 1",
+          "product_name": "Jenka sweatshirt",
+          "image_path": "data/images/090/0909869001.jpg"
+        },
+        {
+          "article_id": "0677930066",
+          "product_type": "Sweater",
+          "colour": "Black",
+          "department": "Basic 1",
+          "product_name": "Queen Sweater",
+          "image_path": "data/images/067/0677930066.jpg"
+        },
+        {
+          "article_id": "0889753001",
+          "product_type": "Sweater",
+          "colour": "Black",
+          "department": "Basic 1",
+          "product_name": "Fazer balloon sweater",
+          "image_path": "data/images/088/0889753001.jpg"
+        },
+        {
+          "article_id": "0677930037",
+          "product_type": "Sweater",
+          "colour": "Light Orange",
+          "department": "Basic 1",
+          "product_name": "Queen Sweater",
+          "image_path": "data/images/067/0677930037.jpg"
+        },
+        {
+          "article_id": "0677930077",
+          "product_type": "Sweater",
+          "colour": "Greenish Khaki",
+          "department": "Basic 1",
+          "product_name": "Queen Sweater",
+          "image_path": "data/images/067/0677930077.jpg"
+        },
+        {
+          "article_id": "0909869004",
+          "product_type": "Sweater",
+          "colour": "Purple",
+          "department": "Basic 1",
+          "product_name": "Jenka sweatshirt",
+          "image_path": "data/images/090/0909869004.jpg"
+        },
+        {
+          "article_id": "0860833002",
+          "product_type": "Sweater",
+          "colour": "Grey",
+          "department": "Basic 1",
+          "product_name": "Runar sweater",
+          "image_path": "data/images/086/0860833002.jpg"
+        },
+        {
+          "article_id": "0677930086",
+          "product_type": "Sweater",
+          "colour": "Grey",
+          "department": "Basic 1",
+          "product_name": "Queen Sweater",
+          "image_path": "data/images/067/0677930086.jpg"
+        },
+        {
+          "article_id": "0717490083",
+          "product_type": "T-shirt",
+          "colour": "Blue",
+          "department": "Basic 1",
+          "product_name": "Cat Tee.",
+          "image_path": "data/images/071/0717490083.jpg"
+        }
+      ],
+      "ncf_meta": [
+        {
+          "article_id": "0919365008",
+          "product_type": "Trousers",
+          "colour": "Blue",
+          "department": "Trousers",
+          "product_name": "Merry HW Slim Mom Denim TRS",
+          "image_path": "data/images/091/0919365008.jpg"
+        },
+        {
+          "article_id": "0799365027",
+          "product_type": "Trousers",
+          "colour": "Blue",
+          "department": "Denim Trousers",
+          "product_name": "Vintage Slim HW ankle consc.",
+          "image_path": "data/images/079/0799365027.jpg"
+        },
+        {
+          "article_id": "0914441002",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Denim Trousers",
+          "product_name": "Curvy Jegging HW.",
+          "image_path": "data/images/091/0914441002.jpg"
+        },
+        {
+          "article_id": "0827968021",
+          "product_type": "T-shirt",
+          "colour": "Purple",
+          "department": "Jersey Basic",
+          "product_name": "Antonia heavy t-shirt",
+          "image_path": "data/images/082/0827968021.jpg"
+        },
+        {
+          "article_id": "0881111001",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Denim Trousers",
+          "product_name": "Shaping Skinny HW",
+          "image_path": "data/images/088/0881111001.jpg"
+        },
+        {
+          "article_id": "0914441004",
+          "product_type": "Trousers",
+          "colour": "Blue",
+          "department": "Denim Trousers",
+          "product_name": "Curvy Jegging HW.",
+          "image_path": "data/images/091/0914441004.jpg"
+        },
+        {
+          "article_id": "0852862001",
+          "product_type": "Skirt",
+          "colour": "Light Red",
+          "department": "Projects Woven Bottoms",
+          "product_name": "Festival Savannah set",
+          "image_path": "data/images/085/0852862001.jpg"
+        },
+        {
+          "article_id": "0905365001",
+          "product_type": "Trousers",
+          "colour": "Light Blue",
+          "department": "Denim Trousers",
+          "product_name": "Embrace Slim HW ankle Consc.",
+          "image_path": "data/images/090/0905365001.jpg"
+        },
+        {
+          "article_id": "0706016001",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Trousers",
+          "product_name": "Jade HW Skinny Denim TRS",
+          "image_path": "data/images/070/0706016001.jpg"
+        },
+        {
+          "article_id": "0706016003",
+          "product_type": "Trousers",
+          "colour": "Dark Blue",
+          "department": "Trousers",
+          "product_name": "Jade HW Skinny Denim TRS",
+          "image_path": "data/images/070/0706016003.jpg"
+        },
+        {
+          "article_id": "0923037003",
+          "product_type": "Sweater",
+          "colour": "Dark Green",
+          "department": "Loungewear",
+          "product_name": "Hongkong",
+          "image_path": "data/images/092/0923037003.jpg"
+        },
+        {
+          "article_id": "0448509014",
+          "product_type": "Trousers",
+          "colour": "Blue",
+          "department": "Trousers",
+          "product_name": "Perrie Slim Mom Denim TRS",
+          "image_path": "data/images/044/0448509014.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "customer_id": "a6c1c70b77da6e6a7979b8d3b16704081c4748420ab7db4238333396156b8e7a",
+    "customer_id_short": "a6c1c70b...",
+    "n_purchases": 70,
+    "top_departments": {
+      "Heavy Basic Jersey": 55,
+      "Tops Knitwear": 5,
+      "Knitwear": 4
+    },
+    "purchase_history": [
+      {
+        "article_id": "0685813037",
+        "product_type": "Sweater",
+        "colour": "Grey",
+        "department": "Heavy Basic Jersey",
+        "product_name": "PETAR SWEATSHIRT",
+        "image_path": "data/images/068/0685813037.jpg"
+      },
+      {
+        "article_id": "0685814003",
+        "product_type": "Hoodie",
+        "colour": "White",
+        "department": "Heavy Basic Jersey",
+        "product_name": "RICHIE HOOD",
+        "image_path": "data/images/068/0685814003.jpg"
+      },
+      {
+        "article_id": "0918292001",
+        "product_type": "Leggings/Tights",
+        "colour": "Black",
+        "department": "Ladies Sport Bottoms",
+        "product_name": "STRONG HW seamless tights",
+        "image_path": "data/images/091/0918292001.jpg"
+      },
+      {
+        "article_id": "0856270002",
+        "product_type": "Top",
+        "colour": "Black",
+        "department": "Ladies Sport Bras",
+        "product_name": "Bounce seamless Cropped LS",
+        "image_path": "data/images/085/0856270002.jpg"
+      },
+      {
+        "article_id": "0889416002",
+        "product_type": "Jumpsuit/Playsuit",
+        "colour": "Black",
+        "department": "Dresses",
+        "product_name": "Manus jumpsuit l/s",
+        "image_path": "data/images/088/0889416002.jpg"
+      },
+      {
+        "article_id": "0589514001",
+        "product_type": "Trousers",
+        "colour": "Black",
+        "department": "Trouser",
+        "product_name": "Lisabon jumpsuit",
+        "image_path": "data/images/058/0589514001.jpg"
+      },
+      {
+        "article_id": "0866731001",
+        "product_type": "Leggings/Tights",
+        "colour": "Black",
+        "department": "Ladies Sport Bottoms",
+        "product_name": "LANA seamless HW tigths",
+        "image_path": "data/images/086/0866731001.jpg"
+      },
+      {
+        "article_id": "0700758001",
+        "product_type": "Bra",
+        "colour": "Black",
+        "department": "Expressive Lingerie",
+        "product_name": "Charlotte Padded Soft Bra H&E",
+        "image_path": "data/images/070/0700758001.jpg"
+      },
+      {
+        "article_id": "0685813003",
+        "product_type": "Sweater",
+        "colour": "White",
+        "department": "Heavy Basic Jersey",
+        "product_name": "PETAR SWEATSHIRT",
+        "image_path": "data/images/068/0685813003.jpg"
+      },
+      {
+        "article_id": "0916468001",
+        "product_type": "Cardigan",
+        "colour": "Black",
+        "department": "Knitwear",
+        "product_name": "Bailey",
+        "image_path": "data/images/091/0916468001.jpg"
+      },
+      {
+        "article_id": "0906305001",
+        "product_type": "Sweater",
+        "colour": "Off White",
+        "department": "Knitwear",
+        "product_name": "Aloe cotton",
+        "image_path": "data/images/090/0906305001.jpg"
+      },
+      {
+        "article_id": "0893133001",
+        "product_type": "Sweater",
+        "colour": "Off White",
+        "department": "Knitwear",
+        "product_name": "Osman crew",
+        "image_path": "data/images/089/0893133001.jpg"
+      },
+      {
+        "article_id": "0842000001",
+        "product_type": "Sweater",
+        "colour": "Black",
+        "department": "Tops Knitwear",
+        "product_name": "Shelly Polo Neck",
+        "image_path": "data/images/084/0842000001.jpg"
+      },
+      {
+        "article_id": "0797988002",
+        "product_type": "Top",
+        "colour": "Black",
+        "department": "Tops Knitwear",
+        "product_name": "Furby Roll Neck",
+        "image_path": "data/images/079/0797988002.jpg"
+      },
+      {
+        "article_id": "0685813042",
+        "product_type": "Sweater",
+        "colour": "Light Beige",
+        "department": "Heavy Basic Jersey",
+        "product_name": "PETAR SWEATSHIRT",
+        "image_path": "data/images/068/0685813042.jpg"
+      }
+    ],
+    "recommendations": {
+      "popularity": [
+        {
+          "article_id": "0751471001",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Trouser",
+          "product_name": "Pluto RW slacks (1)",
+          "image_path": "data/images/075/0751471001.jpg"
+        },
+        {
+          "article_id": "0916468003",
+          "product_type": "Cardigan",
+          "colour": "Blue",
+          "department": "Knitwear",
+          "product_name": "Bailey",
+          "image_path": "data/images/091/0916468003.jpg"
+        },
+        {
+          "article_id": "0896152002",
+          "product_type": "T-shirt",
+          "colour": "Black",
+          "department": "Knitwear",
+          "product_name": "Amelie",
+          "image_path": "data/images/089/0896152002.jpg"
+        },
+        {
+          "article_id": "0706016001",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Trousers",
+          "product_name": "Jade HW Skinny Denim TRS",
+          "image_path": "data/images/070/0706016001.jpg"
+        },
+        {
+          "article_id": "0751471043",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Trouser",
+          "product_name": "Pluto RW slacks (1)",
+          "image_path": "data/images/075/0751471043.jpg"
+        },
+        {
+          "article_id": "0812668001",
+          "product_type": "Sarong",
+          "colour": "White",
+          "department": "Swimwear",
+          "product_name": "B Lola Beach Dress",
+          "image_path": "data/images/081/0812668001.jpg"
+        },
+        {
+          "article_id": "0915529003",
+          "product_type": "Sweater",
+          "colour": "Black",
+          "department": "Knitwear",
+          "product_name": "Liliana",
+          "image_path": "data/images/091/0915529003.jpg"
+        },
+        {
+          "article_id": "0918292001",
+          "product_type": "Leggings/Tights",
+          "colour": "Black",
+          "department": "Ladies Sport Bottoms",
+          "product_name": "STRONG HW seamless tights",
+          "image_path": "data/images/091/0918292001.jpg"
+        },
+        {
+          "article_id": "0610776002",
+          "product_type": "T-shirt",
+          "colour": "Black",
+          "department": "Jersey Basic",
+          "product_name": "Tilly (1)",
+          "image_path": "data/images/061/0610776002.jpg"
+        },
+        {
+          "article_id": "0448509014",
+          "product_type": "Trousers",
+          "colour": "Blue",
+          "department": "Trousers",
+          "product_name": "Perrie Slim Mom Denim TRS",
+          "image_path": "data/images/044/0448509014.jpg"
+        },
+        {
+          "article_id": "0896169002",
+          "product_type": "Cardigan",
+          "colour": "Grey",
+          "department": "Knitwear",
+          "product_name": "Hilton",
+          "image_path": "data/images/089/0896169002.jpg"
+        },
+        {
+          "article_id": "0803757001",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Jersey Basic",
+          "product_name": "Bradley trousers",
+          "image_path": "data/images/080/0803757001.jpg"
+        }
+      ],
+      "knn": [
+        {
+          "article_id": "0915529003",
+          "product_type": "Sweater",
+          "colour": "Black",
+          "department": "Knitwear",
+          "product_name": "Liliana",
+          "image_path": "data/images/091/0915529003.jpg"
+        },
+        {
+          "article_id": "0915526002",
+          "product_type": "Sweater",
+          "colour": "Black",
+          "department": "Knitwear",
+          "product_name": "Nika vest",
+          "image_path": "data/images/091/0915526002.jpg"
+        },
+        {
+          "article_id": "0873279001",
+          "product_type": "Sweater",
+          "colour": "Black",
+          "department": "Knitwear",
+          "product_name": "Osman",
+          "image_path": "data/images/087/0873279001.jpg"
+        },
+        {
+          "article_id": "0906226001",
+          "product_type": "Sweater",
+          "colour": "Black",
+          "department": "Knitwear",
+          "product_name": "Squared top",
+          "image_path": "data/images/090/0906226001.jpg"
+        },
+        {
+          "article_id": "0911870001",
+          "product_type": "Sweater",
+          "colour": "Black",
+          "department": "Knitwear",
+          "product_name": "Bama1",
+          "image_path": "data/images/091/0911870001.jpg"
+        },
+        {
+          "article_id": "0893141001",
+          "product_type": "Sweater",
+          "colour": "Black",
+          "department": "Knitwear",
+          "product_name": "Sandy",
+          "image_path": "data/images/089/0893141001.jpg"
+        },
+        {
+          "article_id": "0822180001",
+          "product_type": "Sweater",
+          "colour": "Black",
+          "department": "Knitwear",
+          "product_name": "Tula",
+          "image_path": "data/images/082/0822180001.jpg"
+        },
+        {
+          "article_id": "0924243002",
+          "product_type": "Sweater",
+          "colour": "Black",
+          "department": "Knitwear",
+          "product_name": "Ohlsson",
+          "image_path": "data/images/092/0924243002.jpg"
+        },
+        {
+          "article_id": "0903790001",
+          "product_type": "Sweater",
+          "colour": "Black",
+          "department": "Knitwear",
+          "product_name": "Monsoon",
+          "image_path": "data/images/090/0903790001.jpg"
+        },
+        {
+          "article_id": "0863583002",
+          "product_type": "Sweater",
+          "colour": "Black",
+          "department": "Knitwear",
+          "product_name": "Morris",
+          "image_path": "data/images/086/0863583002.jpg"
+        },
+        {
+          "article_id": "0863646001",
+          "product_type": "Sweater",
+          "colour": "Black",
+          "department": "Knitwear",
+          "product_name": "Matey",
+          "image_path": "data/images/086/0863646001.jpg"
+        },
+        {
+          "article_id": "0868641002",
+          "product_type": "Sweater",
+          "colour": "Black",
+          "department": "Knitwear",
+          "product_name": "Alisa",
+          "image_path": "data/images/086/0868641002.jpg"
+        }
+      ],
+      "ncf_meta": [
+        {
+          "article_id": "0852174003",
+          "product_type": "Bra",
+          "colour": "White",
+          "department": "Ladies Sport Bras",
+          "product_name": "Firepower seamless bralette",
+          "image_path": "data/images/085/0852174003.jpg"
+        },
+        {
+          "article_id": "0804992014",
+          "product_type": "T-shirt",
+          "colour": "Green",
+          "department": "Ladies Sport Bras",
+          "product_name": "Izzy loose tee",
+          "image_path": "data/images/080/0804992014.jpg"
+        },
+        {
+          "article_id": "0882902001",
+          "product_type": "Bra",
+          "colour": "Black",
+          "department": "Ladies Sport Bras",
+          "product_name": "Orange Push Bralette",
+          "image_path": "data/images/088/0882902001.jpg"
+        },
+        {
+          "article_id": "0685814062",
+          "product_type": "Hoodie",
+          "colour": "Grey",
+          "department": "Heavy Basic Jersey",
+          "product_name": "RICHIE HOOD",
+          "image_path": "data/images/068/0685814062.jpg"
+        },
+        {
+          "article_id": "0849886012",
+          "product_type": "Bra",
+          "colour": "Green",
+          "department": "Ladies Sport Bras",
+          "product_name": "Acai seamless bra CONSCIOUS",
+          "image_path": "data/images/084/0849886012.jpg"
+        },
+        {
+          "article_id": "0685813037",
+          "product_type": "Sweater",
+          "colour": "Grey",
+          "department": "Heavy Basic Jersey",
+          "product_name": "PETAR SWEATSHIRT",
+          "image_path": "data/images/068/0685813037.jpg"
+        },
+        {
+          "article_id": "0842004003",
+          "product_type": "Cardigan",
+          "colour": "Grey",
+          "department": "Tops Knitwear",
+          "product_name": "Millicent Wrap Cardigan",
+          "image_path": "data/images/084/0842004003.jpg"
+        },
+        {
+          "article_id": "0916468003",
+          "product_type": "Cardigan",
+          "colour": "Blue",
+          "department": "Knitwear",
+          "product_name": "Bailey",
+          "image_path": "data/images/091/0916468003.jpg"
+        },
+        {
+          "article_id": "0685813001",
+          "product_type": "Sweater",
+          "colour": "Black",
+          "department": "Heavy Basic Jersey",
+          "product_name": "PETAR SWEATSHIRT",
+          "image_path": "data/images/068/0685813001.jpg"
+        },
+        {
+          "article_id": "0868823008",
+          "product_type": "Top",
+          "colour": "Black",
+          "department": "Ladies Sport Bras",
+          "product_name": "Strong seamless v-neck bralett",
+          "image_path": "data/images/086/0868823008.jpg"
+        },
+        {
+          "article_id": "0915529003",
+          "product_type": "Sweater",
+          "colour": "Black",
+          "department": "Knitwear",
+          "product_name": "Liliana",
+          "image_path": "data/images/091/0915529003.jpg"
+        },
+        {
+          "article_id": "0918292001",
+          "product_type": "Leggings/Tights",
+          "colour": "Black",
+          "department": "Ladies Sport Bottoms",
+          "product_name": "STRONG HW seamless tights",
+          "image_path": "data/images/091/0918292001.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "customer_id": "bed7af841441ef5876142f95232dcf0d20b460e0ffae6a21b0a483011c060585",
+    "customer_id_short": "bed7af84...",
+    "n_purchases": 12,
+    "top_departments": {
+      "Dress": 2,
+      "Trousers": 1,
+      "Flats": 1
+    },
+    "purchase_history": [
+      {
+        "article_id": "0845790002",
+        "product_type": "Trousers",
+        "colour": "Light Purple",
+        "department": "Trousers",
+        "product_name": "Fancy Pants",
+        "image_path": "data/images/084/0845790002.jpg"
+      },
+      {
+        "article_id": "0349301001",
+        "product_type": "Ballerinas",
+        "colour": "Black",
+        "department": "Flats",
+        "product_name": "GLASSIG ESPADRILLE",
+        "image_path": "data/images/034/0349301001.jpg"
+      },
+      {
+        "article_id": "0852374015",
+        "product_type": "Dress",
+        "colour": "Light Beige",
+        "department": "Dress",
+        "product_name": "Berry",
+        "image_path": "data/images/085/0852374015.jpg"
+      },
+      {
+        "article_id": "0877273002",
+        "product_type": "Shirt",
+        "colour": "Light Pink",
+        "department": "Blouse",
+        "product_name": "Grace",
+        "image_path": "data/images/087/0877273002.jpg"
+      },
+      {
+        "article_id": "0697564042",
+        "product_type": "Shirt",
+        "colour": "Light Pink",
+        "department": "Tops Woven",
+        "product_name": "KELLY SHIRT S.1",
+        "image_path": "data/images/069/0697564042.jpg"
+      },
+      {
+        "article_id": "0878828001",
+        "product_type": "Dress",
+        "colour": "White",
+        "department": "Dress",
+        "product_name": "Casper broderie anglais",
+        "image_path": "data/images/087/0878828001.jpg"
+      },
+      {
+        "article_id": "0754792004",
+        "product_type": "Underwear bottom",
+        "colour": "Grey",
+        "department": "Mama Lingerie",
+        "product_name": "Linn hipster 5pk",
+        "image_path": "data/images/075/0754792004.jpg"
+      },
+      {
+        "article_id": "0896229001",
+        "product_type": "Dress",
+        "colour": "Blue",
+        "department": "Denim Other Garments",
+        "product_name": "Shirtdress Western",
+        "image_path": "data/images/089/0896229001.jpg"
+      },
+      {
+        "article_id": "0923569006",
+        "product_type": "Top",
+        "colour": "Light Pink",
+        "department": "Knitwear",
+        "product_name": "Scout",
+        "image_path": "data/images/092/0923569006.jpg"
+      },
+      {
+        "article_id": "0843940001",
+        "product_type": "Leggings/Tights",
+        "colour": "Black",
+        "department": "Jersey",
+        "product_name": "Babette 2-pack",
+        "image_path": "data/images/084/0843940001.jpg"
+      },
+      {
+        "article_id": "0775382001",
+        "product_type": "Trousers",
+        "colour": "Black",
+        "department": "Woven bottoms",
+        "product_name": "Stella treggings (W)",
+        "image_path": "data/images/077/0775382001.jpg"
+      },
+      {
+        "article_id": "0854602010",
+        "product_type": "Blazer",
+        "colour": "Turquoise",
+        "department": "Outdoor/Blazers",
+        "product_name": "Polka Jersey Blazer",
+        "image_path": "data/images/085/0854602010.jpg"
+      }
+    ],
+    "recommendations": {
+      "popularity": [
+        {
+          "article_id": "0751471001",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Trouser",
+          "product_name": "Pluto RW slacks (1)",
+          "image_path": "data/images/075/0751471001.jpg"
+        },
+        {
+          "article_id": "0916468003",
+          "product_type": "Cardigan",
+          "colour": "Blue",
+          "department": "Knitwear",
+          "product_name": "Bailey",
+          "image_path": "data/images/091/0916468003.jpg"
+        },
+        {
+          "article_id": "0896152002",
+          "product_type": "T-shirt",
+          "colour": "Black",
+          "department": "Knitwear",
+          "product_name": "Amelie",
+          "image_path": "data/images/089/0896152002.jpg"
+        },
+        {
+          "article_id": "0706016001",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Trousers",
+          "product_name": "Jade HW Skinny Denim TRS",
+          "image_path": "data/images/070/0706016001.jpg"
+        },
+        {
+          "article_id": "0751471043",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Trouser",
+          "product_name": "Pluto RW slacks (1)",
+          "image_path": "data/images/075/0751471043.jpg"
+        },
+        {
+          "article_id": "0812668001",
+          "product_type": "Sarong",
+          "colour": "White",
+          "department": "Swimwear",
+          "product_name": "B Lola Beach Dress",
+          "image_path": "data/images/081/0812668001.jpg"
+        },
+        {
+          "article_id": "0915529003",
+          "product_type": "Sweater",
+          "colour": "Black",
+          "department": "Knitwear",
+          "product_name": "Liliana",
+          "image_path": "data/images/091/0915529003.jpg"
+        },
+        {
+          "article_id": "0918292001",
+          "product_type": "Leggings/Tights",
+          "colour": "Black",
+          "department": "Ladies Sport Bottoms",
+          "product_name": "STRONG HW seamless tights",
+          "image_path": "data/images/091/0918292001.jpg"
+        },
+        {
+          "article_id": "0610776002",
+          "product_type": "T-shirt",
+          "colour": "Black",
+          "department": "Jersey Basic",
+          "product_name": "Tilly (1)",
+          "image_path": "data/images/061/0610776002.jpg"
+        },
+        {
+          "article_id": "0448509014",
+          "product_type": "Trousers",
+          "colour": "Blue",
+          "department": "Trousers",
+          "product_name": "Perrie Slim Mom Denim TRS",
+          "image_path": "data/images/044/0448509014.jpg"
+        },
+        {
+          "article_id": "0896169002",
+          "product_type": "Cardigan",
+          "colour": "Grey",
+          "department": "Knitwear",
+          "product_name": "Hilton",
+          "image_path": "data/images/089/0896169002.jpg"
+        },
+        {
+          "article_id": "0803757001",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Jersey Basic",
+          "product_name": "Bradley trousers",
+          "image_path": "data/images/080/0803757001.jpg"
+        }
+      ],
+      "knn": [
+        {
+          "article_id": "0877014005",
+          "product_type": "Dress",
+          "colour": "Light Pink",
+          "department": "Dress",
+          "product_name": "Kiwi",
+          "image_path": "data/images/087/0877014005.jpg"
+        },
+        {
+          "article_id": "0875049001",
+          "product_type": "Dress",
+          "colour": "Light Pink",
+          "department": "Dress",
+          "product_name": "GP Cindy",
+          "image_path": "data/images/087/0875049001.jpg"
+        },
+        {
+          "article_id": "0852369005",
+          "product_type": "Dress",
+          "colour": "Light Pink",
+          "department": "Dress",
+          "product_name": "Dream",
+          "image_path": "data/images/085/0852369005.jpg"
+        },
+        {
+          "article_id": "0897684002",
+          "product_type": "Dress",
+          "colour": "Black",
+          "department": "Dress",
+          "product_name": "Farah",
+          "image_path": "data/images/089/0897684002.jpg"
+        },
+        {
+          "article_id": "0909185002",
+          "product_type": "Dress",
+          "colour": "Black",
+          "department": "Dress",
+          "product_name": "CS Santa Barbara",
+          "image_path": "data/images/090/0909185002.jpg"
+        },
+        {
+          "article_id": "0918443004",
+          "product_type": "Dress",
+          "colour": "Black",
+          "department": "Dress",
+          "product_name": "Khloe",
+          "image_path": "data/images/091/0918443004.jpg"
+        },
+        {
+          "article_id": "0877014001",
+          "product_type": "Dress",
+          "colour": "Black",
+          "department": "Dress",
+          "product_name": "Kiwi",
+          "image_path": "data/images/087/0877014001.jpg"
+        },
+        {
+          "article_id": "0863001001",
+          "product_type": "Dress",
+          "colour": "Black",
+          "department": "Dress",
+          "product_name": "Maria",
+          "image_path": "data/images/086/0863001001.jpg"
+        },
+        {
+          "article_id": "0861558003",
+          "product_type": "Dress",
+          "colour": "Black",
+          "department": "Dress",
+          "product_name": "Meringue",
+          "image_path": "data/images/086/0861558003.jpg"
+        },
+        {
+          "article_id": "0861847004",
+          "product_type": "Dress",
+          "colour": "Black",
+          "department": "Dress",
+          "product_name": "Fiona",
+          "image_path": "data/images/086/0861847004.jpg"
+        },
+        {
+          "article_id": "0903359001",
+          "product_type": "Dress",
+          "colour": "Black",
+          "department": "Dress",
+          "product_name": "Santa Monica",
+          "image_path": "data/images/090/0903359001.jpg"
+        },
+        {
+          "article_id": "0908728003",
+          "product_type": "Dress",
+          "colour": "Black",
+          "department": "Dress",
+          "product_name": "Tuna",
+          "image_path": "data/images/090/0908728003.jpg"
+        }
+      ],
+      "ncf_meta": [
+        {
+          "article_id": "0907418001",
+          "product_type": "Belt",
+          "colour": "Black",
+          "department": "Belts",
+          "product_name": "Alcatraz waist",
+          "image_path": "data/images/090/0907418001.jpg"
+        },
+        {
+          "article_id": "0568601007",
+          "product_type": "Blazer",
+          "colour": "Dark Blue",
+          "department": "Suit",
+          "product_name": "Mariette Blazer",
+          "image_path": "data/images/056/0568601007.jpg"
+        },
+        {
+          "article_id": "0568601030",
+          "product_type": "Blazer",
+          "colour": "Light Beige",
+          "department": "Suit",
+          "product_name": "Mariette Blazer",
+          "image_path": "data/images/056/0568601030.jpg"
+        },
+        {
+          "article_id": "0876148003",
+          "product_type": "Jacket",
+          "colour": "Dark Red",
+          "department": "Outdoor/Blazers",
+          "product_name": "HONEY WOOL COAT",
+          "image_path": "data/images/087/0876148003.jpg"
+        },
+        {
+          "article_id": "0728156025",
+          "product_type": "Blazer",
+          "colour": "Dark Red",
+          "department": "Suit",
+          "product_name": "Robin blazer",
+          "image_path": "data/images/072/0728156025.jpg"
+        },
+        {
+          "article_id": "0907415001",
+          "product_type": "Belt",
+          "colour": "Black",
+          "department": "Belts",
+          "product_name": "Nicole waist",
+          "image_path": "data/images/090/0907415001.jpg"
+        },
+        {
+          "article_id": "0930350002",
+          "product_type": "Belt",
+          "colour": "White",
+          "department": "Belts",
+          "product_name": "Janelle Waist w Chain",
+          "image_path": "data/images/093/0930350002.jpg"
+        },
+        {
+          "article_id": "0947509001",
+          "product_type": "Belt",
+          "colour": "Yellowish Brown",
+          "department": "Belts",
+          "product_name": "PQ Ingrid Longtip",
+          "image_path": "data/images/094/0947509001.jpg"
+        },
+        {
+          "article_id": "0796454005",
+          "product_type": "Bra",
+          "colour": "Grey",
+          "department": "Mama Lingerie",
+          "product_name": "Lucy seamless removabe pad",
+          "image_path": "data/images/079/0796454005.jpg"
+        },
+        {
+          "article_id": "0904736001",
+          "product_type": "Belt",
+          "colour": "Yellowish Brown",
+          "department": "Belts",
+          "product_name": "Swirl hip belt",
+          "image_path": "data/images/090/0904736001.jpg"
+        },
+        {
+          "article_id": "0926221003",
+          "product_type": "Skirt",
+          "colour": "Dark Red",
+          "department": "Skirt",
+          "product_name": "Yoga Taffeta skirt",
+          "image_path": "data/images/092/0926221003.jpg"
+        },
+        {
+          "article_id": "0839332009",
+          "product_type": "Blazer",
+          "colour": "Light Pink",
+          "department": "Suit",
+          "product_name": "Burmilla blazer",
+          "image_path": "data/images/083/0839332009.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "customer_id": "71d4eb174a0c97ba712585ed3c28603ba85ac5531696a218393d92db16b6e51a",
+    "customer_id_short": "71d4eb17...",
+    "n_purchases": 17,
+    "top_departments": {
+      "Ladies Sport Bras": 10,
+      "Ladies Sport Bottoms": 2,
+      "Jersey Basic": 2
+    },
+    "purchase_history": [
+      {
+        "article_id": "0861731002",
+        "product_type": "Dress",
+        "colour": "Light Pink",
+        "department": "Jersey",
+        "product_name": "Riggy maxi",
+        "image_path": "data/images/086/0861731002.jpg"
+      },
+      {
+        "article_id": "0717490010",
+        "product_type": "T-shirt",
+        "colour": "White",
+        "department": "Basic 1",
+        "product_name": "Cat Tee.",
+        "image_path": "data/images/071/0717490010.jpg"
+      },
+      {
+        "article_id": "0868823007",
+        "product_type": "Top",
+        "colour": "Greenish Khaki",
+        "department": "Ladies Sport Bras",
+        "product_name": "Strong seamless v-neck bralett",
+        "image_path": "data/images/086/0868823007.jpg"
+      },
+      {
+        "article_id": "0914537002",
+        "product_type": "T-shirt",
+        "colour": "Greenish Khaki",
+        "department": "Ladies Sport Bras",
+        "product_name": "Bounce seamless cropped tee",
+        "image_path": "data/images/091/0914537002.jpg"
+      },
+      {
+        "article_id": "0868283001",
+        "product_type": "Top",
+        "colour": "Black",
+        "department": "Ladies Sport Bras",
+        "product_name": "Cindy cropped top",
+        "image_path": "data/images/086/0868283001.jpg"
+      },
+      {
+        "article_id": "0906729003",
+        "product_type": "Shorts",
+        "colour": "White",
+        "department": "Ladies Sport Bottoms",
+        "product_name": "Strong seamless Biker",
+        "image_path": "data/images/090/0906729003.jpg"
+      },
+      {
+        "article_id": "0865086006",
+        "product_type": "Bra",
+        "colour": "Pink",
+        "department": "Ladies Sport Bras",
+        "product_name": "2 Pack Karin Mid-Support Bra",
+        "image_path": "data/images/086/0865086006.jpg"
+      },
+      {
+        "article_id": "0861803014",
+        "product_type": "Top",
+        "colour": "Dark Pink",
+        "department": "Ladies Sport Bras",
+        "product_name": "Sunspot Seamless Crop Top",
+        "image_path": "data/images/086/0861803014.jpg"
+      },
+      {
+        "article_id": "0768912001",
+        "product_type": "Leggings/Tights",
+        "colour": "Black",
+        "department": "Jersey Basic",
+        "product_name": "Long leggings update",
+        "image_path": "data/images/076/0768912001.jpg"
+      },
+      {
+        "article_id": "0903309001",
+        "product_type": "Vest top",
+        "colour": "Black",
+        "department": "Jersey Basic",
+        "product_name": "V-neck straptop 3-p",
+        "image_path": "data/images/090/0903309001.jpg"
+      },
+      {
+        "article_id": "0843373001",
+        "product_type": "Skirt",
+        "colour": "Red",
+        "department": "Shorts & Skirts",
+        "product_name": "Jorah romantic skirt",
+        "image_path": "data/images/084/0843373001.jpg"
+      },
+      {
+        "article_id": "0924605001",
+        "product_type": "Top",
+        "colour": "Black",
+        "department": "Ladies Sport Bras",
+        "product_name": "Bounce cropped tee conscious",
+        "image_path": "data/images/092/0924605001.jpg"
+      },
+      {
+        "article_id": "0868823011",
+        "product_type": "Top",
+        "colour": "White",
+        "department": "Ladies Sport Bras",
+        "product_name": "Strong seamless v-neck bralett",
+        "image_path": "data/images/086/0868823011.jpg"
+      },
+      {
+        "article_id": "0754238024",
+        "product_type": "Top",
+        "colour": "Black",
+        "department": "Ladies Sport Bras",
+        "product_name": "Karin padded sport bra",
+        "image_path": "data/images/075/0754238024.jpg"
+      },
+      {
+        "article_id": "0918292004",
+        "product_type": "Leggings/Tights",
+        "colour": "Greenish Khaki",
+        "department": "Ladies Sport Bottoms",
+        "product_name": "STRONG HW seamless tights",
+        "image_path": "data/images/091/0918292004.jpg"
+      }
+    ],
+    "recommendations": {
+      "popularity": [
+        {
+          "article_id": "0751471001",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Trouser",
+          "product_name": "Pluto RW slacks (1)",
+          "image_path": "data/images/075/0751471001.jpg"
+        },
+        {
+          "article_id": "0916468003",
+          "product_type": "Cardigan",
+          "colour": "Blue",
+          "department": "Knitwear",
+          "product_name": "Bailey",
+          "image_path": "data/images/091/0916468003.jpg"
+        },
+        {
+          "article_id": "0896152002",
+          "product_type": "T-shirt",
+          "colour": "Black",
+          "department": "Knitwear",
+          "product_name": "Amelie",
+          "image_path": "data/images/089/0896152002.jpg"
+        },
+        {
+          "article_id": "0706016001",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Trousers",
+          "product_name": "Jade HW Skinny Denim TRS",
+          "image_path": "data/images/070/0706016001.jpg"
+        },
+        {
+          "article_id": "0751471043",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Trouser",
+          "product_name": "Pluto RW slacks (1)",
+          "image_path": "data/images/075/0751471043.jpg"
+        },
+        {
+          "article_id": "0812668001",
+          "product_type": "Sarong",
+          "colour": "White",
+          "department": "Swimwear",
+          "product_name": "B Lola Beach Dress",
+          "image_path": "data/images/081/0812668001.jpg"
+        },
+        {
+          "article_id": "0915529003",
+          "product_type": "Sweater",
+          "colour": "Black",
+          "department": "Knitwear",
+          "product_name": "Liliana",
+          "image_path": "data/images/091/0915529003.jpg"
+        },
+        {
+          "article_id": "0918292001",
+          "product_type": "Leggings/Tights",
+          "colour": "Black",
+          "department": "Ladies Sport Bottoms",
+          "product_name": "STRONG HW seamless tights",
+          "image_path": "data/images/091/0918292001.jpg"
+        },
+        {
+          "article_id": "0610776002",
+          "product_type": "T-shirt",
+          "colour": "Black",
+          "department": "Jersey Basic",
+          "product_name": "Tilly (1)",
+          "image_path": "data/images/061/0610776002.jpg"
+        },
+        {
+          "article_id": "0448509014",
+          "product_type": "Trousers",
+          "colour": "Blue",
+          "department": "Trousers",
+          "product_name": "Perrie Slim Mom Denim TRS",
+          "image_path": "data/images/044/0448509014.jpg"
+        },
+        {
+          "article_id": "0896169002",
+          "product_type": "Cardigan",
+          "colour": "Grey",
+          "department": "Knitwear",
+          "product_name": "Hilton",
+          "image_path": "data/images/089/0896169002.jpg"
+        },
+        {
+          "article_id": "0803757001",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Jersey Basic",
+          "product_name": "Bradley trousers",
+          "image_path": "data/images/080/0803757001.jpg"
+        }
+      ],
+      "knn": [
+        {
+          "article_id": "0754238024",
+          "product_type": "Top",
+          "colour": "Black",
+          "department": "Ladies Sport Bras",
+          "product_name": "Karin padded sport bra",
+          "image_path": "data/images/075/0754238024.jpg"
+        },
+        {
+          "article_id": "0856270003",
+          "product_type": "Top",
+          "colour": "Black",
+          "department": "Ladies Sport Bras",
+          "product_name": "Bounce seamless Cropped LS",
+          "image_path": "data/images/085/0856270003.jpg"
+        },
+        {
+          "article_id": "0915921002",
+          "product_type": "Top",
+          "colour": "Black",
+          "department": "Ladies Sport Bras",
+          "product_name": "Cava body",
+          "image_path": "data/images/091/0915921002.jpg"
+        },
+        {
+          "article_id": "0791587001",
+          "product_type": "Top",
+          "colour": "Black",
+          "department": "Ladies Sport Bras",
+          "product_name": "Speedy tee (C)",
+          "image_path": "data/images/079/0791587001.jpg"
+        },
+        {
+          "article_id": "0875350001",
+          "product_type": "Top",
+          "colour": "Black",
+          "department": "Ladies Sport Bras",
+          "product_name": "Lana seamless bralette",
+          "image_path": "data/images/087/0875350001.jpg"
+        },
+        {
+          "article_id": "0876043001",
+          "product_type": "Top",
+          "colour": "Black",
+          "department": "Ladies Sport Bras",
+          "product_name": "Cindy cropped LS",
+          "image_path": "data/images/087/0876043001.jpg"
+        },
+        {
+          "article_id": "0851370002",
+          "product_type": "Top",
+          "colour": "Black",
+          "department": "Ladies Sport Bras",
+          "product_name": "Wisdom Cut Out Bra",
+          "image_path": "data/images/085/0851370002.jpg"
+        },
+        {
+          "article_id": "0851374001",
+          "product_type": "Top",
+          "colour": "Black",
+          "department": "Ladies Sport Bras",
+          "product_name": "Karin mid support bra",
+          "image_path": "data/images/085/0851374001.jpg"
+        },
+        {
+          "article_id": "0886737001",
+          "product_type": "Top",
+          "colour": "Black",
+          "department": "Ladies Sport Bras",
+          "product_name": "Hybrid seamless half zip",
+          "image_path": "data/images/088/0886737001.jpg"
+        },
+        {
+          "article_id": "0921646001",
+          "product_type": "Top",
+          "colour": "Black",
+          "department": "Ladies Sport Bras",
+          "product_name": "Flax Bodysuit",
+          "image_path": "data/images/092/0921646001.jpg"
+        },
+        {
+          "article_id": "0902023001",
+          "product_type": "Top",
+          "colour": "Black",
+          "department": "Ladies Sport Bras",
+          "product_name": "Adelia Bralette",
+          "image_path": "data/images/090/0902023001.jpg"
+        },
+        {
+          "article_id": "0740922001",
+          "product_type": "Top",
+          "colour": "Black",
+          "department": "Ladies Sport Bras",
+          "product_name": "Veronica seamless bra",
+          "image_path": "data/images/074/0740922001.jpg"
+        }
+      ],
+      "ncf_meta": [
+        {
+          "article_id": "0918292001",
+          "product_type": "Leggings/Tights",
+          "colour": "Black",
+          "department": "Ladies Sport Bottoms",
+          "product_name": "STRONG HW seamless tights",
+          "image_path": "data/images/091/0918292001.jpg"
+        },
+        {
+          "article_id": "0918292004",
+          "product_type": "Leggings/Tights",
+          "colour": "Greenish Khaki",
+          "department": "Ladies Sport Bottoms",
+          "product_name": "STRONG HW seamless tights",
+          "image_path": "data/images/091/0918292004.jpg"
+        },
+        {
+          "article_id": "0868823008",
+          "product_type": "Top",
+          "colour": "Black",
+          "department": "Ladies Sport Bras",
+          "product_name": "Strong seamless v-neck bralett",
+          "image_path": "data/images/086/0868823008.jpg"
+        },
+        {
+          "article_id": "0852584001",
+          "product_type": "Unknown",
+          "colour": "Black",
+          "department": "Ladies Sport Bottoms",
+          "product_name": "SUPREME RW tights",
+          "image_path": "data/images/085/0852584001.jpg"
+        },
+        {
+          "article_id": "0866731001",
+          "product_type": "Leggings/Tights",
+          "colour": "Black",
+          "department": "Ladies Sport Bottoms",
+          "product_name": "LANA seamless HW tigths",
+          "image_path": "data/images/086/0866731001.jpg"
+        },
+        {
+          "article_id": "0861803014",
+          "product_type": "Top",
+          "colour": "Dark Pink",
+          "department": "Ladies Sport Bras",
+          "product_name": "Sunspot Seamless Crop Top",
+          "image_path": "data/images/086/0861803014.jpg"
+        },
+        {
+          "article_id": "0868823007",
+          "product_type": "Top",
+          "colour": "Greenish Khaki",
+          "department": "Ladies Sport Bras",
+          "product_name": "Strong seamless v-neck bralett",
+          "image_path": "data/images/086/0868823007.jpg"
+        },
+        {
+          "article_id": "0914537002",
+          "product_type": "T-shirt",
+          "colour": "Greenish Khaki",
+          "department": "Ladies Sport Bras",
+          "product_name": "Bounce seamless cropped tee",
+          "image_path": "data/images/091/0914537002.jpg"
+        },
+        {
+          "article_id": "0791587015",
+          "product_type": "T-shirt",
+          "colour": "Green",
+          "department": "Ladies Sport Bras",
+          "product_name": "Speedy conscious tee",
+          "image_path": "data/images/079/0791587015.jpg"
+        },
+        {
+          "article_id": "0856270002",
+          "product_type": "Top",
+          "colour": "Black",
+          "department": "Ladies Sport Bras",
+          "product_name": "Bounce seamless Cropped LS",
+          "image_path": "data/images/085/0856270002.jpg"
+        },
+        {
+          "article_id": "0804992014",
+          "product_type": "T-shirt",
+          "colour": "Green",
+          "department": "Ladies Sport Bras",
+          "product_name": "Izzy loose tee",
+          "image_path": "data/images/080/0804992014.jpg"
+        },
+        {
+          "article_id": "0730683050",
+          "product_type": "Unknown",
+          "colour": "Black",
+          "department": "Ladies Sport Bottoms",
+          "product_name": "HAVANA HW tights",
+          "image_path": "data/images/073/0730683050.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "customer_id": "dfa8d2952c995febc8fad312511a5f111a6eb545d1cc3988eabc9c296db253af",
+    "customer_id_short": "dfa8d295...",
+    "n_purchases": 13,
+    "top_departments": {
+      "Swimwear": 3,
+      "Casual Lingerie": 2,
+      "Trousers": 2
+    },
+    "purchase_history": [
+      {
+        "article_id": "0736923003",
+        "product_type": "Bra",
+        "colour": "Black",
+        "department": "Casual Lingerie",
+        "product_name": "Dusk Padded T-shirt",
+        "image_path": "data/images/073/0736923003.jpg"
+      },
+      {
+        "article_id": "0854602001",
+        "product_type": "Blazer",
+        "colour": "Black",
+        "department": "Outdoor/Blazers",
+        "product_name": "Polka Jersey Blazer",
+        "image_path": "data/images/085/0854602001.jpg"
+      },
+      {
+        "article_id": "0706016003",
+        "product_type": "Trousers",
+        "colour": "Dark Blue",
+        "department": "Trousers",
+        "product_name": "Jade HW Skinny Denim TRS",
+        "image_path": "data/images/070/0706016003.jpg"
+      },
+      {
+        "article_id": "0806225002",
+        "product_type": "Bikini top",
+        "colour": "Black",
+        "department": "Swimwear",
+        "product_name": "All That Jazz Push Up Bra",
+        "image_path": "data/images/080/0806225002.jpg"
+      },
+      {
+        "article_id": "0464297007",
+        "product_type": "Underwear bottom",
+        "colour": "Black",
+        "department": "Casual Lingerie",
+        "product_name": "Greta Thong Mynta Low 3p",
+        "image_path": "data/images/046/0464297007.jpg"
+      },
+      {
+        "article_id": "0811835001",
+        "product_type": "Bikini top",
+        "colour": "Black",
+        "department": "Swimwear",
+        "product_name": "Superwoman Superpush",
+        "image_path": "data/images/081/0811835001.jpg"
+      },
+      {
+        "article_id": "0803468002",
+        "product_type": "Underwear bottom",
+        "colour": "Black",
+        "department": "Shopbasket Lingerie",
+        "product_name": "Inga 7p Ct Thong",
+        "image_path": "data/images/080/0803468002.jpg"
+      },
+      {
+        "article_id": "0707269003",
+        "product_type": "Unknown",
+        "colour": "Black",
+        "department": "Clean Lingerie",
+        "product_name": "Khloe SP Seamless Andes",
+        "image_path": "data/images/070/0707269003.jpg"
+      },
+      {
+        "article_id": "0757915002",
+        "product_type": "Bikini top",
+        "colour": "Black",
+        "department": "Swimwear",
+        "product_name": "Swish Super Push",
+        "image_path": "data/images/075/0757915002.jpg"
+      },
+      {
+        "article_id": "0829054005",
+        "product_type": "Dress",
+        "colour": "Black",
+        "department": "Basic 1",
+        "product_name": "Dolly dress",
+        "image_path": "data/images/082/0829054005.jpg"
+      },
+      {
+        "article_id": "0858147001",
+        "product_type": "Bra",
+        "colour": "Black",
+        "department": "Expressive Lingerie",
+        "product_name": "Venice SP bralette",
+        "image_path": "data/images/085/0858147001.jpg"
+      },
+      {
+        "article_id": "0873158008",
+        "product_type": "T-shirt",
+        "colour": "Dark Grey",
+        "department": "Tops Fancy Jersey",
+        "product_name": "LINNIE TVP",
+        "image_path": "data/images/087/0873158008.jpg"
+      },
+      {
+        "article_id": "0448509001",
+        "product_type": "Trousers",
+        "colour": "Black",
+        "department": "Trousers",
+        "product_name": "Perrie Slim Mom Denim TRS",
+        "image_path": "data/images/044/0448509001.jpg"
+      }
+    ],
+    "recommendations": {
+      "popularity": [
+        {
+          "article_id": "0751471001",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Trouser",
+          "product_name": "Pluto RW slacks (1)",
+          "image_path": "data/images/075/0751471001.jpg"
+        },
+        {
+          "article_id": "0916468003",
+          "product_type": "Cardigan",
+          "colour": "Blue",
+          "department": "Knitwear",
+          "product_name": "Bailey",
+          "image_path": "data/images/091/0916468003.jpg"
+        },
+        {
+          "article_id": "0896152002",
+          "product_type": "T-shirt",
+          "colour": "Black",
+          "department": "Knitwear",
+          "product_name": "Amelie",
+          "image_path": "data/images/089/0896152002.jpg"
+        },
+        {
+          "article_id": "0706016001",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Trousers",
+          "product_name": "Jade HW Skinny Denim TRS",
+          "image_path": "data/images/070/0706016001.jpg"
+        },
+        {
+          "article_id": "0751471043",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Trouser",
+          "product_name": "Pluto RW slacks (1)",
+          "image_path": "data/images/075/0751471043.jpg"
+        },
+        {
+          "article_id": "0812668001",
+          "product_type": "Sarong",
+          "colour": "White",
+          "department": "Swimwear",
+          "product_name": "B Lola Beach Dress",
+          "image_path": "data/images/081/0812668001.jpg"
+        },
+        {
+          "article_id": "0915529003",
+          "product_type": "Sweater",
+          "colour": "Black",
+          "department": "Knitwear",
+          "product_name": "Liliana",
+          "image_path": "data/images/091/0915529003.jpg"
+        },
+        {
+          "article_id": "0918292001",
+          "product_type": "Leggings/Tights",
+          "colour": "Black",
+          "department": "Ladies Sport Bottoms",
+          "product_name": "STRONG HW seamless tights",
+          "image_path": "data/images/091/0918292001.jpg"
+        },
+        {
+          "article_id": "0610776002",
+          "product_type": "T-shirt",
+          "colour": "Black",
+          "department": "Jersey Basic",
+          "product_name": "Tilly (1)",
+          "image_path": "data/images/061/0610776002.jpg"
+        },
+        {
+          "article_id": "0448509014",
+          "product_type": "Trousers",
+          "colour": "Blue",
+          "department": "Trousers",
+          "product_name": "Perrie Slim Mom Denim TRS",
+          "image_path": "data/images/044/0448509014.jpg"
+        },
+        {
+          "article_id": "0896169002",
+          "product_type": "Cardigan",
+          "colour": "Grey",
+          "department": "Knitwear",
+          "product_name": "Hilton",
+          "image_path": "data/images/089/0896169002.jpg"
+        },
+        {
+          "article_id": "0803757001",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Jersey Basic",
+          "product_name": "Bradley trousers",
+          "image_path": "data/images/080/0803757001.jpg"
+        }
+      ],
+      "knn": [
+        {
+          "article_id": "0843777005",
+          "product_type": "Bra",
+          "colour": "Black",
+          "department": "Casual Lingerie",
+          "product_name": "Anglaise padded softbra OPT3",
+          "image_path": "data/images/084/0843777005.jpg"
+        },
+        {
+          "article_id": "0903306001",
+          "product_type": "Bra",
+          "colour": "Black",
+          "department": "Casual Lingerie",
+          "product_name": "Uma Softbra Rib Mia Conscious",
+          "image_path": "data/images/090/0903306001.jpg"
+        },
+        {
+          "article_id": "0557994003",
+          "product_type": "Bra",
+          "colour": "Black",
+          "department": "Casual Lingerie",
+          "product_name": "Liza 2p padded wireless rio mc",
+          "image_path": "data/images/055/0557994003.jpg"
+        },
+        {
+          "article_id": "0859736002",
+          "product_type": "Bra",
+          "colour": "Black",
+          "department": "Casual Lingerie",
+          "product_name": "Coachella C&S padded wire",
+          "image_path": "data/images/085/0859736002.jpg"
+        },
+        {
+          "article_id": "0859737002",
+          "product_type": "Bra",
+          "colour": "Black",
+          "department": "Casual Lingerie",
+          "product_name": "Coachella padded softbra",
+          "image_path": "data/images/085/0859737002.jpg"
+        },
+        {
+          "article_id": "0878733002",
+          "product_type": "Bra",
+          "colour": "Black",
+          "department": "Casual Lingerie",
+          "product_name": "Mimosa Malta Bandeau",
+          "image_path": "data/images/087/0878733002.jpg"
+        },
+        {
+          "article_id": "0736923003",
+          "product_type": "Bra",
+          "colour": "Black",
+          "department": "Casual Lingerie",
+          "product_name": "Dusk Padded T-shirt",
+          "image_path": "data/images/073/0736923003.jpg"
+        },
+        {
+          "article_id": "0694848001",
+          "product_type": "Bra",
+          "colour": "Black",
+          "department": "Casual Lingerie",
+          "product_name": "Ellen 2pk ct rio wireless",
+          "image_path": "data/images/069/0694848001.jpg"
+        },
+        {
+          "article_id": "0894756002",
+          "product_type": "Bra",
+          "colour": "Black",
+          "department": "Casual Lingerie",
+          "product_name": "Ilse padded softbra",
+          "image_path": "data/images/089/0894756002.jpg"
+        },
+        {
+          "article_id": "0846753002",
+          "product_type": "Bra",
+          "colour": "Black",
+          "department": "Casual Lingerie",
+          "product_name": "Evie Long Padded Softbra",
+          "image_path": "data/images/084/0846753002.jpg"
+        },
+        {
+          "article_id": "0820572001",
+          "product_type": "Bra",
+          "colour": "Black",
+          "department": "Casual Lingerie",
+          "product_name": "Liza Padded Milano 2pk",
+          "image_path": "data/images/082/0820572001.jpg"
+        },
+        {
+          "article_id": "0723469001",
+          "product_type": "Bra",
+          "colour": "Black",
+          "department": "Casual Lingerie",
+          "product_name": "Kelly 2pk Melbourne push ct",
+          "image_path": "data/images/072/0723469001.jpg"
+        }
+      ],
+      "ncf_meta": [
+        {
+          "article_id": "0758034001",
+          "product_type": "Underwear bottom",
+          "colour": "Black",
+          "department": "Shopbasket Lingerie",
+          "product_name": "Ivory ch brazilian 5pk",
+          "image_path": "data/images/075/0758034001.jpg"
+        },
+        {
+          "article_id": "0864415003",
+          "product_type": "Underwear bottom",
+          "colour": "Light Pink",
+          "department": "Expressive Lingerie",
+          "product_name": "Ilse Myntha Thong 2p",
+          "image_path": "data/images/086/0864415003.jpg"
+        },
+        {
+          "article_id": "0748355003",
+          "product_type": "Underwear bottom",
+          "colour": "Black",
+          "department": "UW",
+          "product_name": "Rose thong 7-pack(1)",
+          "image_path": "data/images/074/0748355003.jpg"
+        },
+        {
+          "article_id": "0822344001",
+          "product_type": "Slippers",
+          "colour": "Black",
+          "department": "Expressive Lingerie",
+          "product_name": "Venice wireless fargo",
+          "image_path": "data/images/082/0822344001.jpg"
+        },
+        {
+          "article_id": "0706016001",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Trousers",
+          "product_name": "Jade HW Skinny Denim TRS",
+          "image_path": "data/images/070/0706016001.jpg"
+        },
+        {
+          "article_id": "0611415034",
+          "product_type": "Underwear bottom",
+          "colour": "White",
+          "department": "Expressive Lingerie",
+          "product_name": "Charlotte Brazilian Aza.Low 2p",
+          "image_path": "data/images/061/0611415034.jpg"
+        },
+        {
+          "article_id": "0557599022",
+          "product_type": "Underwear bottom",
+          "colour": "Black",
+          "department": "Expressive Lingerie",
+          "product_name": "Samantha 2p Brazilian (Acacia)",
+          "image_path": "data/images/055/0557599022.jpg"
+        },
+        {
+          "article_id": "0864415005",
+          "product_type": "Underwear bottom",
+          "colour": "Pink",
+          "department": "Expressive Lingerie",
+          "product_name": "Ilse Myntha Thong 2p",
+          "image_path": "data/images/086/0864415005.jpg"
+        },
+        {
+          "article_id": "0803468002",
+          "product_type": "Underwear bottom",
+          "colour": "Black",
+          "department": "Shopbasket Lingerie",
+          "product_name": "Inga 7p Ct Thong",
+          "image_path": "data/images/080/0803468002.jpg"
+        },
+        {
+          "article_id": "0614854005",
+          "product_type": "Underwear bottom",
+          "colour": "Black",
+          "department": "Shopbasket Lingerie",
+          "product_name": "Fiona brazilian (Acacia) 4p",
+          "image_path": "data/images/061/0614854005.jpg"
+        },
+        {
+          "article_id": "0866383006",
+          "product_type": "Bikini top",
+          "colour": "Black",
+          "department": "Swimwear",
+          "product_name": "Push it Push Bra",
+          "image_path": "data/images/086/0866383006.jpg"
+        },
+        {
+          "article_id": "0706016003",
+          "product_type": "Trousers",
+          "colour": "Dark Blue",
+          "department": "Trousers",
+          "product_name": "Jade HW Skinny Denim TRS",
+          "image_path": "data/images/070/0706016003.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "customer_id": "caf967aa1feb53a7500262da8075a0f07430b111fcfaa8e2a8765e37a99a7a31",
+    "customer_id_short": "caf967aa...",
+    "n_purchases": 15,
+    "top_departments": {
+      "Ladies Sport Bras": 7,
+      "Swimwear": 6,
+      "Jersey Basic": 2
+    },
+    "purchase_history": [
+      {
+        "article_id": "0237347063",
+        "product_type": "Hoodie",
+        "colour": "Pink",
+        "department": "Jersey Basic",
+        "product_name": "Theron (1)",
+        "image_path": "data/images/023/0237347063.jpg"
+      },
+      {
+        "article_id": "0804992014",
+        "product_type": "T-shirt",
+        "colour": "Green",
+        "department": "Ladies Sport Bras",
+        "product_name": "Izzy loose tee",
+        "image_path": "data/images/080/0804992014.jpg"
+      },
+      {
+        "article_id": "0833530003",
+        "product_type": "Swimwear bottom",
+        "colour": "Other Pink",
+        "department": "Swimwear",
+        "product_name": "Surfs Up Tanga",
+        "image_path": "data/images/083/0833530003.jpg"
+      },
+      {
+        "article_id": "0833499002",
+        "product_type": "Bikini top",
+        "colour": "Dark Blue",
+        "department": "Swimwear",
+        "product_name": "Surfs Up Push Triangle",
+        "image_path": "data/images/083/0833499002.jpg"
+      },
+      {
+        "article_id": "0833499003",
+        "product_type": "Bikini top",
+        "colour": "Other Pink",
+        "department": "Swimwear",
+        "product_name": "Surfs Up Push Triangle",
+        "image_path": "data/images/083/0833499003.jpg"
+      },
+      {
+        "article_id": "0754238019",
+        "product_type": "Top",
+        "colour": "Light Pink",
+        "department": "Ladies Sport Bras",
+        "product_name": "Karin padded sport bra",
+        "image_path": "data/images/075/0754238019.jpg"
+      },
+      {
+        "article_id": "0754238024",
+        "product_type": "Top",
+        "colour": "Black",
+        "department": "Ladies Sport Bras",
+        "product_name": "Karin padded sport bra",
+        "image_path": "data/images/075/0754238024.jpg"
+      },
+      {
+        "article_id": "0804992001",
+        "product_type": "T-shirt",
+        "colour": "Black",
+        "department": "Ladies Sport Bras",
+        "product_name": "Izzy tee",
+        "image_path": "data/images/080/0804992001.jpg"
+      },
+      {
+        "article_id": "0851774008",
+        "product_type": "Bra",
+        "colour": "Dark Grey",
+        "department": "Ladies Sport Bras",
+        "product_name": "Heaven high support shape bra",
+        "image_path": "data/images/085/0851774008.jpg"
+      },
+      {
+        "article_id": "0833530002",
+        "product_type": "Swimwear bottom",
+        "colour": "Dark Blue",
+        "department": "Swimwear",
+        "product_name": "Surfs Up Tanga",
+        "image_path": "data/images/083/0833530002.jpg"
+      }
+    ],
+    "recommendations": {
+      "popularity": [
+        {
+          "article_id": "0751471001",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Trouser",
+          "product_name": "Pluto RW slacks (1)",
+          "image_path": "data/images/075/0751471001.jpg"
+        },
+        {
+          "article_id": "0916468003",
+          "product_type": "Cardigan",
+          "colour": "Blue",
+          "department": "Knitwear",
+          "product_name": "Bailey",
+          "image_path": "data/images/091/0916468003.jpg"
+        },
+        {
+          "article_id": "0896152002",
+          "product_type": "T-shirt",
+          "colour": "Black",
+          "department": "Knitwear",
+          "product_name": "Amelie",
+          "image_path": "data/images/089/0896152002.jpg"
+        },
+        {
+          "article_id": "0706016001",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Trousers",
+          "product_name": "Jade HW Skinny Denim TRS",
+          "image_path": "data/images/070/0706016001.jpg"
+        },
+        {
+          "article_id": "0751471043",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Trouser",
+          "product_name": "Pluto RW slacks (1)",
+          "image_path": "data/images/075/0751471043.jpg"
+        },
+        {
+          "article_id": "0812668001",
+          "product_type": "Sarong",
+          "colour": "White",
+          "department": "Swimwear",
+          "product_name": "B Lola Beach Dress",
+          "image_path": "data/images/081/0812668001.jpg"
+        },
+        {
+          "article_id": "0915529003",
+          "product_type": "Sweater",
+          "colour": "Black",
+          "department": "Knitwear",
+          "product_name": "Liliana",
+          "image_path": "data/images/091/0915529003.jpg"
+        },
+        {
+          "article_id": "0918292001",
+          "product_type": "Leggings/Tights",
+          "colour": "Black",
+          "department": "Ladies Sport Bottoms",
+          "product_name": "STRONG HW seamless tights",
+          "image_path": "data/images/091/0918292001.jpg"
+        },
+        {
+          "article_id": "0610776002",
+          "product_type": "T-shirt",
+          "colour": "Black",
+          "department": "Jersey Basic",
+          "product_name": "Tilly (1)",
+          "image_path": "data/images/061/0610776002.jpg"
+        },
+        {
+          "article_id": "0448509014",
+          "product_type": "Trousers",
+          "colour": "Blue",
+          "department": "Trousers",
+          "product_name": "Perrie Slim Mom Denim TRS",
+          "image_path": "data/images/044/0448509014.jpg"
+        },
+        {
+          "article_id": "0896169002",
+          "product_type": "Cardigan",
+          "colour": "Grey",
+          "department": "Knitwear",
+          "product_name": "Hilton",
+          "image_path": "data/images/089/0896169002.jpg"
+        },
+        {
+          "article_id": "0803757001",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Jersey Basic",
+          "product_name": "Bradley trousers",
+          "image_path": "data/images/080/0803757001.jpg"
+        }
+      ],
+      "knn": [
+        {
+          "article_id": "0856270002",
+          "product_type": "Top",
+          "colour": "Black",
+          "department": "Ladies Sport Bras",
+          "product_name": "Bounce seamless Cropped LS",
+          "image_path": "data/images/085/0856270002.jpg"
+        },
+        {
+          "article_id": "0856270003",
+          "product_type": "Top",
+          "colour": "Black",
+          "department": "Ladies Sport Bras",
+          "product_name": "Bounce seamless Cropped LS",
+          "image_path": "data/images/085/0856270003.jpg"
+        },
+        {
+          "article_id": "0894680001",
+          "product_type": "Top",
+          "colour": "Black",
+          "department": "Ladies Sport Bras",
+          "product_name": "Brighton cropped Top",
+          "image_path": "data/images/089/0894680001.jpg"
+        },
+        {
+          "article_id": "0886737001",
+          "product_type": "Top",
+          "colour": "Black",
+          "department": "Ladies Sport Bras",
+          "product_name": "Hybrid seamless half zip",
+          "image_path": "data/images/088/0886737001.jpg"
+        },
+        {
+          "article_id": "0875350001",
+          "product_type": "Top",
+          "colour": "Black",
+          "department": "Ladies Sport Bras",
+          "product_name": "Lana seamless bralette",
+          "image_path": "data/images/087/0875350001.jpg"
+        },
+        {
+          "article_id": "0905518001",
+          "product_type": "T-shirt",
+          "colour": "Black",
+          "department": "Ladies Sport Bras",
+          "product_name": "Harmony Loose T-Shirt",
+          "image_path": "data/images/090/0905518001.jpg"
+        },
+        {
+          "article_id": "0915292001",
+          "product_type": "Top",
+          "colour": "Black",
+          "department": "Ladies Sport Bras",
+          "product_name": "Lana seamless cropped ls",
+          "image_path": "data/images/091/0915292001.jpg"
+        },
+        {
+          "article_id": "0876043001",
+          "product_type": "Top",
+          "colour": "Black",
+          "department": "Ladies Sport Bras",
+          "product_name": "Cindy cropped LS",
+          "image_path": "data/images/087/0876043001.jpg"
+        },
+        {
+          "article_id": "0924605001",
+          "product_type": "Top",
+          "colour": "Black",
+          "department": "Ladies Sport Bras",
+          "product_name": "Bounce cropped tee conscious",
+          "image_path": "data/images/092/0924605001.jpg"
+        },
+        {
+          "article_id": "0791587001",
+          "product_type": "Top",
+          "colour": "Black",
+          "department": "Ladies Sport Bras",
+          "product_name": "Speedy tee (C)",
+          "image_path": "data/images/079/0791587001.jpg"
+        },
+        {
+          "article_id": "0814833005",
+          "product_type": "Top",
+          "colour": "Black",
+          "department": "Ladies Sport Bras",
+          "product_name": "Captivate Sports Bra",
+          "image_path": "data/images/081/0814833005.jpg"
+        },
+        {
+          "article_id": "0879291001",
+          "product_type": "T-shirt",
+          "colour": "Black",
+          "department": "Ladies Sport Bras",
+          "product_name": "Hale seamless tee",
+          "image_path": "data/images/087/0879291001.jpg"
+        }
+      ],
+      "ncf_meta": [
+        {
+          "article_id": "0868823008",
+          "product_type": "Top",
+          "colour": "Black",
+          "department": "Ladies Sport Bras",
+          "product_name": "Strong seamless v-neck bralett",
+          "image_path": "data/images/086/0868823008.jpg"
+        },
+        {
+          "article_id": "0804992014",
+          "product_type": "T-shirt",
+          "colour": "Green",
+          "department": "Ladies Sport Bras",
+          "product_name": "Izzy loose tee",
+          "image_path": "data/images/080/0804992014.jpg"
+        },
+        {
+          "article_id": "0832331004",
+          "product_type": "Swimwear bottom",
+          "colour": "Yellow",
+          "department": "Swimwear",
+          "product_name": "Wowcha HR Brief",
+          "image_path": "data/images/083/0832331004.jpg"
+        },
+        {
+          "article_id": "0823505001",
+          "product_type": "Bikini top",
+          "colour": "Light Blue",
+          "department": "Swimwear",
+          "product_name": "Lazer Razer Push Up",
+          "image_path": "data/images/082/0823505001.jpg"
+        },
+        {
+          "article_id": "0791587015",
+          "product_type": "T-shirt",
+          "colour": "Green",
+          "department": "Ladies Sport Bras",
+          "product_name": "Speedy conscious tee",
+          "image_path": "data/images/079/0791587015.jpg"
+        },
+        {
+          "article_id": "0811925009",
+          "product_type": "Bikini top",
+          "colour": "Black",
+          "department": "Swimwear",
+          "product_name": "Knot Bitter Top",
+          "image_path": "data/images/081/0811925009.jpg"
+        },
+        {
+          "article_id": "0791587001",
+          "product_type": "Top",
+          "colour": "Black",
+          "department": "Ladies Sport Bras",
+          "product_name": "Speedy tee (C)",
+          "image_path": "data/images/079/0791587001.jpg"
+        },
+        {
+          "article_id": "0351484039",
+          "product_type": "Swimwear bottom",
+          "colour": "Light Blue",
+          "department": "Swimwear",
+          "product_name": "Lazer Razer Brief",
+          "image_path": "data/images/035/0351484039.jpg"
+        },
+        {
+          "article_id": "0868823007",
+          "product_type": "Top",
+          "colour": "Greenish Khaki",
+          "department": "Ladies Sport Bras",
+          "product_name": "Strong seamless v-neck bralett",
+          "image_path": "data/images/086/0868823007.jpg"
+        },
+        {
+          "article_id": "0776237006",
+          "product_type": "Bikini top",
+          "colour": "Yellow",
+          "department": "Swimwear",
+          "product_name": "Shake it in Balconette",
+          "image_path": "data/images/077/0776237006.jpg"
+        },
+        {
+          "article_id": "0894956001",
+          "product_type": "Vest top",
+          "colour": "Black",
+          "department": "Ladies Sport Bras",
+          "product_name": "Paros Cropped Inbuild Bra Tank",
+          "image_path": "data/images/089/0894956001.jpg"
+        },
+        {
+          "article_id": "0832330004",
+          "product_type": "Bikini top",
+          "colour": "Yellow",
+          "department": "Swimwear",
+          "product_name": "Wowcha Top",
+          "image_path": "data/images/083/0832330004.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "customer_id": "38cce1f033d9d6b7060634990082aa1e3f6e7bf7f4f3afe9baccaff0c66e9a76",
+    "customer_id_short": "38cce1f0...",
+    "n_purchases": 5,
+    "top_departments": {
+      "Light Basic Jersey": 2,
+      "Denim trousers": 2,
+      "Swimwear": 1
+    },
+    "purchase_history": [
+      {
+        "article_id": "0823518001",
+        "product_type": "Swimsuit",
+        "colour": "Dark Grey",
+        "department": "Swimwear",
+        "product_name": "+ Jane Swimsuit",
+        "image_path": "data/images/082/0823518001.jpg"
+      },
+      {
+        "article_id": "0570002001",
+        "product_type": "T-shirt",
+        "colour": "Black",
+        "department": "Light Basic Jersey",
+        "product_name": "ROY SLIM RN T-SHIRT",
+        "image_path": "data/images/057/0570002001.jpg"
+      },
+      {
+        "article_id": "0720504002",
+        "product_type": "Trousers",
+        "colour": "Dark Blue",
+        "department": "Denim trousers",
+        "product_name": "Skinny 5pkt Lowprice",
+        "image_path": "data/images/072/0720504002.jpg"
+      },
+      {
+        "article_id": "0720504008",
+        "product_type": "Trousers",
+        "colour": "Grey",
+        "department": "Denim trousers",
+        "product_name": "Skinny 5pkt Lowprice",
+        "image_path": "data/images/072/0720504008.jpg"
+      },
+      {
+        "article_id": "0570003001",
+        "product_type": "T-shirt",
+        "colour": "Black",
+        "department": "Light Basic Jersey",
+        "product_name": "VICTOR SLIM VN T-SHIRT",
+        "image_path": "data/images/057/0570003001.jpg"
+      }
+    ],
+    "recommendations": {
+      "popularity": [
+        {
+          "article_id": "0751471001",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Trouser",
+          "product_name": "Pluto RW slacks (1)",
+          "image_path": "data/images/075/0751471001.jpg"
+        },
+        {
+          "article_id": "0916468003",
+          "product_type": "Cardigan",
+          "colour": "Blue",
+          "department": "Knitwear",
+          "product_name": "Bailey",
+          "image_path": "data/images/091/0916468003.jpg"
+        },
+        {
+          "article_id": "0896152002",
+          "product_type": "T-shirt",
+          "colour": "Black",
+          "department": "Knitwear",
+          "product_name": "Amelie",
+          "image_path": "data/images/089/0896152002.jpg"
+        },
+        {
+          "article_id": "0706016001",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Trousers",
+          "product_name": "Jade HW Skinny Denim TRS",
+          "image_path": "data/images/070/0706016001.jpg"
+        },
+        {
+          "article_id": "0751471043",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Trouser",
+          "product_name": "Pluto RW slacks (1)",
+          "image_path": "data/images/075/0751471043.jpg"
+        },
+        {
+          "article_id": "0812668001",
+          "product_type": "Sarong",
+          "colour": "White",
+          "department": "Swimwear",
+          "product_name": "B Lola Beach Dress",
+          "image_path": "data/images/081/0812668001.jpg"
+        },
+        {
+          "article_id": "0915529003",
+          "product_type": "Sweater",
+          "colour": "Black",
+          "department": "Knitwear",
+          "product_name": "Liliana",
+          "image_path": "data/images/091/0915529003.jpg"
+        },
+        {
+          "article_id": "0918292001",
+          "product_type": "Leggings/Tights",
+          "colour": "Black",
+          "department": "Ladies Sport Bottoms",
+          "product_name": "STRONG HW seamless tights",
+          "image_path": "data/images/091/0918292001.jpg"
+        },
+        {
+          "article_id": "0610776002",
+          "product_type": "T-shirt",
+          "colour": "Black",
+          "department": "Jersey Basic",
+          "product_name": "Tilly (1)",
+          "image_path": "data/images/061/0610776002.jpg"
+        },
+        {
+          "article_id": "0448509014",
+          "product_type": "Trousers",
+          "colour": "Blue",
+          "department": "Trousers",
+          "product_name": "Perrie Slim Mom Denim TRS",
+          "image_path": "data/images/044/0448509014.jpg"
+        },
+        {
+          "article_id": "0896169002",
+          "product_type": "Cardigan",
+          "colour": "Grey",
+          "department": "Knitwear",
+          "product_name": "Hilton",
+          "image_path": "data/images/089/0896169002.jpg"
+        },
+        {
+          "article_id": "0803757001",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Jersey Basic",
+          "product_name": "Bradley trousers",
+          "image_path": "data/images/080/0803757001.jpg"
+        }
+      ],
+      "knn": [
+        {
+          "article_id": "0763275002",
+          "product_type": "T-shirt",
+          "colour": "Black",
+          "department": "Light Basic Jersey",
+          "product_name": "RYAN REG VN T-SHIRT",
+          "image_path": "data/images/076/0763275002.jpg"
+        },
+        {
+          "article_id": "0685816002",
+          "product_type": "T-shirt",
+          "colour": "Black",
+          "department": "Light Basic Jersey",
+          "product_name": "RONNY REG RN T-SHIRT",
+          "image_path": "data/images/068/0685816002.jpg"
+        },
+        {
+          "article_id": "0570002001",
+          "product_type": "T-shirt",
+          "colour": "Black",
+          "department": "Light Basic Jersey",
+          "product_name": "ROY SLIM RN T-SHIRT",
+          "image_path": "data/images/057/0570002001.jpg"
+        },
+        {
+          "article_id": "0598755003",
+          "product_type": "T-shirt",
+          "colour": "Black",
+          "department": "Light Basic Jersey",
+          "product_name": "Taz Tee",
+          "image_path": "data/images/059/0598755003.jpg"
+        },
+        {
+          "article_id": "0598755001",
+          "product_type": "T-shirt",
+          "colour": "Black",
+          "department": "Light Basic Jersey",
+          "product_name": "TAZ LONG RN T-SHIRT",
+          "image_path": "data/images/059/0598755001.jpg"
+        },
+        {
+          "article_id": "0685816004",
+          "product_type": "T-shirt",
+          "colour": "Black",
+          "department": "Light Basic Jersey",
+          "product_name": "RONNY R-NECK",
+          "image_path": "data/images/068/0685816004.jpg"
+        },
+        {
+          "article_id": "0570003001",
+          "product_type": "T-shirt",
+          "colour": "Black",
+          "department": "Light Basic Jersey",
+          "product_name": "VICTOR SLIM VN T-SHIRT",
+          "image_path": "data/images/057/0570003001.jpg"
+        },
+        {
+          "article_id": "0636207006",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Denim trousers",
+          "product_name": "Slim 5pkt Lowprice",
+          "image_path": "data/images/063/0636207006.jpg"
+        },
+        {
+          "article_id": "0751994007",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Denim trousers",
+          "product_name": "Slim 5pkt Midprice",
+          "image_path": "data/images/075/0751994007.jpg"
+        },
+        {
+          "article_id": "0636207011",
+          "product_type": "Trousers",
+          "colour": "Dark Blue",
+          "department": "Denim trousers",
+          "product_name": "Slim 5pkt Lowprice",
+          "image_path": "data/images/063/0636207011.jpg"
+        },
+        {
+          "article_id": "0720504002",
+          "product_type": "Trousers",
+          "colour": "Dark Blue",
+          "department": "Denim trousers",
+          "product_name": "Skinny 5pkt Lowprice",
+          "image_path": "data/images/072/0720504002.jpg"
+        },
+        {
+          "article_id": "0685816049",
+          "product_type": "T-shirt",
+          "colour": "Grey",
+          "department": "Light Basic Jersey",
+          "product_name": "RONNY REG RN T-SHIRT",
+          "image_path": "data/images/068/0685816049.jpg"
+        }
+      ],
+      "ncf_meta": [
+        {
+          "article_id": "0720504008",
+          "product_type": "Trousers",
+          "colour": "Grey",
+          "department": "Denim trousers",
+          "product_name": "Skinny 5pkt Lowprice",
+          "image_path": "data/images/072/0720504008.jpg"
+        },
+        {
+          "article_id": "0636207006",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Denim trousers",
+          "product_name": "Slim 5pkt Lowprice",
+          "image_path": "data/images/063/0636207006.jpg"
+        },
+        {
+          "article_id": "0751994007",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Denim trousers",
+          "product_name": "Slim 5pkt Midprice",
+          "image_path": "data/images/075/0751994007.jpg"
+        },
+        {
+          "article_id": "0720504002",
+          "product_type": "Trousers",
+          "colour": "Dark Blue",
+          "department": "Denim trousers",
+          "product_name": "Skinny 5pkt Lowprice",
+          "image_path": "data/images/072/0720504002.jpg"
+        },
+        {
+          "article_id": "0685816049",
+          "product_type": "T-shirt",
+          "colour": "Grey",
+          "department": "Light Basic Jersey",
+          "product_name": "RONNY REG RN T-SHIRT",
+          "image_path": "data/images/068/0685816049.jpg"
+        },
+        {
+          "article_id": "0685816048",
+          "product_type": "T-shirt",
+          "colour": "Greenish Khaki",
+          "department": "Light Basic Jersey",
+          "product_name": "RONNY REG RN T-SHIRT",
+          "image_path": "data/images/068/0685816048.jpg"
+        },
+        {
+          "article_id": "0685816002",
+          "product_type": "T-shirt",
+          "colour": "Black",
+          "department": "Light Basic Jersey",
+          "product_name": "RONNY REG RN T-SHIRT",
+          "image_path": "data/images/068/0685816002.jpg"
+        },
+        {
+          "article_id": "0757805002",
+          "product_type": "T-shirt",
+          "colour": "Black",
+          "department": "Jersey Fancy",
+          "product_name": "Wow Rocky Regular Tee 4.99:-",
+          "image_path": "data/images/075/0757805002.jpg"
+        },
+        {
+          "article_id": "0685816001",
+          "product_type": "T-shirt",
+          "colour": "White",
+          "department": "Light Basic Jersey",
+          "product_name": "RONNY REG RN T-SHIRT",
+          "image_path": "data/images/068/0685816001.jpg"
+        },
+        {
+          "article_id": "0879096001",
+          "product_type": "Shorts",
+          "colour": "Dark Blue",
+          "department": "Shorts",
+          "product_name": "Dario shorts",
+          "image_path": "data/images/087/0879096001.jpg"
+        },
+        {
+          "article_id": "0720504010",
+          "product_type": "Trousers",
+          "colour": "Blue",
+          "department": "Denim trousers",
+          "product_name": "Skinny 5pkt Lowprice",
+          "image_path": "data/images/072/0720504010.jpg"
+        },
+        {
+          "article_id": "0685816017",
+          "product_type": "T-shirt",
+          "colour": "Dark Red",
+          "department": "Light Basic Jersey",
+          "product_name": "RONNY R-NECK",
+          "image_path": "data/images/068/0685816017.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "customer_id": "9420694f62596806a82255b91d2a2fb330aac7e784e5fe05ad7a6c74a5d9038f",
+    "customer_id_short": "9420694f...",
+    "n_purchases": 8,
+    "top_departments": {
+      "Swimwear": 4,
+      "Skirts": 2,
+      "Denim Other Garments": 1
+    },
+    "purchase_history": [
+      {
+        "article_id": "0832331003",
+        "product_type": "Swimwear bottom",
+        "colour": "Dark Orange",
+        "department": "Swimwear",
+        "product_name": "Wowcha HR Brief",
+        "image_path": "data/images/083/0832331003.jpg"
+      },
+      {
+        "article_id": "0698276009",
+        "product_type": "Swimsuit",
+        "colour": "Beige",
+        "department": "Swimwear",
+        "product_name": "Epic Padded Swimsuit",
+        "image_path": "data/images/069/0698276009.jpg"
+      },
+      {
+        "article_id": "0833500001",
+        "product_type": "Bikini top",
+        "colour": "Dark Orange",
+        "department": "Swimwear",
+        "product_name": "Beach Please Push Bra",
+        "image_path": "data/images/083/0833500001.jpg"
+      },
+      {
+        "article_id": "0832330003",
+        "product_type": "Bikini top",
+        "colour": "Dark Orange",
+        "department": "Swimwear",
+        "product_name": "Wowcha Top",
+        "image_path": "data/images/083/0832330003.jpg"
+      },
+      {
+        "article_id": "0880479001",
+        "product_type": "Skirt",
+        "colour": "Black",
+        "department": "Skirts",
+        "product_name": "GAUDI PU",
+        "image_path": "data/images/088/0880479001.jpg"
+      },
+      {
+        "article_id": "0777892001",
+        "product_type": "Skirt",
+        "colour": "Black",
+        "department": "Skirts",
+        "product_name": "GRETA SKIRT",
+        "image_path": "data/images/077/0777892001.jpg"
+      },
+      {
+        "article_id": "0745232001",
+        "product_type": "Skirt",
+        "colour": "Black",
+        "department": "Denim Other Garments",
+        "product_name": "Skirt Mini Stretch Edie",
+        "image_path": "data/images/074/0745232001.jpg"
+      },
+      {
+        "article_id": "0801673014",
+        "product_type": "Top",
+        "colour": "Purple",
+        "department": "Basic 1",
+        "product_name": "Yasmine LS",
+        "image_path": "data/images/080/0801673014.jpg"
+      }
+    ],
+    "recommendations": {
+      "popularity": [
+        {
+          "article_id": "0751471001",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Trouser",
+          "product_name": "Pluto RW slacks (1)",
+          "image_path": "data/images/075/0751471001.jpg"
+        },
+        {
+          "article_id": "0916468003",
+          "product_type": "Cardigan",
+          "colour": "Blue",
+          "department": "Knitwear",
+          "product_name": "Bailey",
+          "image_path": "data/images/091/0916468003.jpg"
+        },
+        {
+          "article_id": "0896152002",
+          "product_type": "T-shirt",
+          "colour": "Black",
+          "department": "Knitwear",
+          "product_name": "Amelie",
+          "image_path": "data/images/089/0896152002.jpg"
+        },
+        {
+          "article_id": "0706016001",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Trousers",
+          "product_name": "Jade HW Skinny Denim TRS",
+          "image_path": "data/images/070/0706016001.jpg"
+        },
+        {
+          "article_id": "0751471043",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Trouser",
+          "product_name": "Pluto RW slacks (1)",
+          "image_path": "data/images/075/0751471043.jpg"
+        },
+        {
+          "article_id": "0812668001",
+          "product_type": "Sarong",
+          "colour": "White",
+          "department": "Swimwear",
+          "product_name": "B Lola Beach Dress",
+          "image_path": "data/images/081/0812668001.jpg"
+        },
+        {
+          "article_id": "0915529003",
+          "product_type": "Sweater",
+          "colour": "Black",
+          "department": "Knitwear",
+          "product_name": "Liliana",
+          "image_path": "data/images/091/0915529003.jpg"
+        },
+        {
+          "article_id": "0918292001",
+          "product_type": "Leggings/Tights",
+          "colour": "Black",
+          "department": "Ladies Sport Bottoms",
+          "product_name": "STRONG HW seamless tights",
+          "image_path": "data/images/091/0918292001.jpg"
+        },
+        {
+          "article_id": "0610776002",
+          "product_type": "T-shirt",
+          "colour": "Black",
+          "department": "Jersey Basic",
+          "product_name": "Tilly (1)",
+          "image_path": "data/images/061/0610776002.jpg"
+        },
+        {
+          "article_id": "0448509014",
+          "product_type": "Trousers",
+          "colour": "Blue",
+          "department": "Trousers",
+          "product_name": "Perrie Slim Mom Denim TRS",
+          "image_path": "data/images/044/0448509014.jpg"
+        },
+        {
+          "article_id": "0896169002",
+          "product_type": "Cardigan",
+          "colour": "Grey",
+          "department": "Knitwear",
+          "product_name": "Hilton",
+          "image_path": "data/images/089/0896169002.jpg"
+        },
+        {
+          "article_id": "0803757001",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Jersey Basic",
+          "product_name": "Bradley trousers",
+          "image_path": "data/images/080/0803757001.jpg"
+        }
+      ],
+      "knn": [
+        {
+          "article_id": "0811835009",
+          "product_type": "Bikini top",
+          "colour": "Black",
+          "department": "Swimwear",
+          "product_name": "Superwoman Superpush",
+          "image_path": "data/images/081/0811835009.jpg"
+        },
+        {
+          "article_id": "0865587001",
+          "product_type": "Bikini top",
+          "colour": "Black",
+          "department": "Swimwear",
+          "product_name": "Simba Top",
+          "image_path": "data/images/086/0865587001.jpg"
+        },
+        {
+          "article_id": "0812658001",
+          "product_type": "Bikini top",
+          "colour": "Black",
+          "department": "Swimwear",
+          "product_name": "Chubba Chubb one shoulder Top",
+          "image_path": "data/images/081/0812658001.jpg"
+        },
+        {
+          "article_id": "0723529001",
+          "product_type": "Bikini top",
+          "colour": "Black",
+          "department": "Swimwear",
+          "product_name": "Lazer Razer Adj. push triangle",
+          "image_path": "data/images/072/0723529001.jpg"
+        },
+        {
+          "article_id": "0542464001",
+          "product_type": "Bikini top",
+          "colour": "Black",
+          "department": "Swimwear",
+          "product_name": "Buckle Up Triangle Top",
+          "image_path": "data/images/054/0542464001.jpg"
+        },
+        {
+          "article_id": "0854261001",
+          "product_type": "Bikini top",
+          "colour": "Black",
+          "department": "Swimwear",
+          "product_name": "Tropic Like Its Hot Top",
+          "image_path": "data/images/085/0854261001.jpg"
+        },
+        {
+          "article_id": "0754404004",
+          "product_type": "Bikini top",
+          "colour": "Black",
+          "department": "Swimwear",
+          "product_name": "Desert Sport Top",
+          "image_path": "data/images/075/0754404004.jpg"
+        },
+        {
+          "article_id": "0901955002",
+          "product_type": "Bikini top",
+          "colour": "Black",
+          "department": "Swimwear",
+          "product_name": "Lyon Long Top",
+          "image_path": "data/images/090/0901955002.jpg"
+        },
+        {
+          "article_id": "0832284001",
+          "product_type": "Bikini top",
+          "colour": "Black",
+          "department": "Swimwear",
+          "product_name": "Beach Please Super Push Bra",
+          "image_path": "data/images/083/0832284001.jpg"
+        },
+        {
+          "article_id": "0873072002",
+          "product_type": "Bikini top",
+          "colour": "Black",
+          "department": "Swimwear",
+          "product_name": "X-tina long top",
+          "image_path": "data/images/087/0873072002.jpg"
+        },
+        {
+          "article_id": "0559616013",
+          "product_type": "Bikini top",
+          "colour": "Black",
+          "department": "Swimwear",
+          "product_name": "Timeless Push Triangle(1)",
+          "image_path": "data/images/055/0559616013.jpg"
+        },
+        {
+          "article_id": "0861477001",
+          "product_type": "Bikini top",
+          "colour": "Black",
+          "department": "Swimwear",
+          "product_name": "Clean Bandit Top",
+          "image_path": "data/images/086/0861477001.jpg"
+        }
+      ],
+      "ncf_meta": [
+        {
+          "article_id": "0832330004",
+          "product_type": "Bikini top",
+          "colour": "Yellow",
+          "department": "Swimwear",
+          "product_name": "Wowcha Top",
+          "image_path": "data/images/083/0832330004.jpg"
+        },
+        {
+          "article_id": "0832331003",
+          "product_type": "Swimwear bottom",
+          "colour": "Dark Orange",
+          "department": "Swimwear",
+          "product_name": "Wowcha HR Brief",
+          "image_path": "data/images/083/0832331003.jpg"
+        },
+        {
+          "article_id": "0866383006",
+          "product_type": "Bikini top",
+          "colour": "Black",
+          "department": "Swimwear",
+          "product_name": "Push it Push Bra",
+          "image_path": "data/images/086/0866383006.jpg"
+        },
+        {
+          "article_id": "0776179006",
+          "product_type": "Dress",
+          "colour": "Dark Grey",
+          "department": "Basic 1",
+          "product_name": "Annelien Hoodie Dress",
+          "image_path": "data/images/077/0776179006.jpg"
+        },
+        {
+          "article_id": "0832330003",
+          "product_type": "Bikini top",
+          "colour": "Dark Orange",
+          "department": "Swimwear",
+          "product_name": "Wowcha Top",
+          "image_path": "data/images/083/0832330003.jpg"
+        },
+        {
+          "article_id": "0822946001",
+          "product_type": "Bikini top",
+          "colour": "Black",
+          "department": "Swimwear",
+          "product_name": "Scary Spice Top",
+          "image_path": "data/images/082/0822946001.jpg"
+        },
+        {
+          "article_id": "0882759003",
+          "product_type": "Swimwear bottom",
+          "colour": "Black",
+          "department": "Swimwear",
+          "product_name": "Price Mini Curved Brief",
+          "image_path": "data/images/088/0882759003.jpg"
+        },
+        {
+          "article_id": "0559630029",
+          "product_type": "Bikini top",
+          "colour": "Light Blue",
+          "department": "Swimwear",
+          "product_name": "Timeless Triangle Top",
+          "image_path": "data/images/055/0559630029.jpg"
+        },
+        {
+          "article_id": "0811925001",
+          "product_type": "Bikini top",
+          "colour": "White",
+          "department": "Swimwear",
+          "product_name": "Knot Bitter Top",
+          "image_path": "data/images/081/0811925001.jpg"
+        },
+        {
+          "article_id": "0811925009",
+          "product_type": "Bikini top",
+          "colour": "Black",
+          "department": "Swimwear",
+          "product_name": "Knot Bitter Top",
+          "image_path": "data/images/081/0811925009.jpg"
+        },
+        {
+          "article_id": "0833530002",
+          "product_type": "Swimwear bottom",
+          "colour": "Dark Blue",
+          "department": "Swimwear",
+          "product_name": "Surfs Up Tanga",
+          "image_path": "data/images/083/0833530002.jpg"
+        },
+        {
+          "article_id": "0776237006",
+          "product_type": "Bikini top",
+          "colour": "Yellow",
+          "department": "Swimwear",
+          "product_name": "Shake it in Balconette",
+          "image_path": "data/images/077/0776237006.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "customer_id": "4330e0e73e9963471c0e4d9b7c1f2dd9700ddb90dd5b02f88df50b141a88ff13",
+    "customer_id_short": "4330e0e7...",
+    "n_purchases": 5,
+    "top_departments": {
+      "Trouser": 3,
+      "Blouse": 1,
+      "Basic 1": 1
+    },
+    "purchase_history": [
+      {
+        "article_id": "0874891001",
+        "product_type": "Blouse",
+        "colour": "Light Beige",
+        "department": "Blouse",
+        "product_name": "Elie",
+        "image_path": "data/images/087/0874891001.jpg"
+      },
+      {
+        "article_id": "0877769001",
+        "product_type": "Trousers",
+        "colour": "Black",
+        "department": "Trouser",
+        "product_name": "Sky wide trouser(1)",
+        "image_path": "data/images/087/0877769001.jpg"
+      },
+      {
+        "article_id": "0677930066",
+        "product_type": "Sweater",
+        "colour": "Black",
+        "department": "Basic 1",
+        "product_name": "Queen Sweater",
+        "image_path": "data/images/067/0677930066.jpg"
+      }
+    ],
+    "recommendations": {
+      "popularity": [
+        {
+          "article_id": "0751471001",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Trouser",
+          "product_name": "Pluto RW slacks (1)",
+          "image_path": "data/images/075/0751471001.jpg"
+        },
+        {
+          "article_id": "0916468003",
+          "product_type": "Cardigan",
+          "colour": "Blue",
+          "department": "Knitwear",
+          "product_name": "Bailey",
+          "image_path": "data/images/091/0916468003.jpg"
+        },
+        {
+          "article_id": "0896152002",
+          "product_type": "T-shirt",
+          "colour": "Black",
+          "department": "Knitwear",
+          "product_name": "Amelie",
+          "image_path": "data/images/089/0896152002.jpg"
+        },
+        {
+          "article_id": "0706016001",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Trousers",
+          "product_name": "Jade HW Skinny Denim TRS",
+          "image_path": "data/images/070/0706016001.jpg"
+        },
+        {
+          "article_id": "0751471043",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Trouser",
+          "product_name": "Pluto RW slacks (1)",
+          "image_path": "data/images/075/0751471043.jpg"
+        },
+        {
+          "article_id": "0812668001",
+          "product_type": "Sarong",
+          "colour": "White",
+          "department": "Swimwear",
+          "product_name": "B Lola Beach Dress",
+          "image_path": "data/images/081/0812668001.jpg"
+        },
+        {
+          "article_id": "0915529003",
+          "product_type": "Sweater",
+          "colour": "Black",
+          "department": "Knitwear",
+          "product_name": "Liliana",
+          "image_path": "data/images/091/0915529003.jpg"
+        },
+        {
+          "article_id": "0918292001",
+          "product_type": "Leggings/Tights",
+          "colour": "Black",
+          "department": "Ladies Sport Bottoms",
+          "product_name": "STRONG HW seamless tights",
+          "image_path": "data/images/091/0918292001.jpg"
+        },
+        {
+          "article_id": "0610776002",
+          "product_type": "T-shirt",
+          "colour": "Black",
+          "department": "Jersey Basic",
+          "product_name": "Tilly (1)",
+          "image_path": "data/images/061/0610776002.jpg"
+        },
+        {
+          "article_id": "0448509014",
+          "product_type": "Trousers",
+          "colour": "Blue",
+          "department": "Trousers",
+          "product_name": "Perrie Slim Mom Denim TRS",
+          "image_path": "data/images/044/0448509014.jpg"
+        },
+        {
+          "article_id": "0896169002",
+          "product_type": "Cardigan",
+          "colour": "Grey",
+          "department": "Knitwear",
+          "product_name": "Hilton",
+          "image_path": "data/images/089/0896169002.jpg"
+        },
+        {
+          "article_id": "0803757001",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Jersey Basic",
+          "product_name": "Bradley trousers",
+          "image_path": "data/images/080/0803757001.jpg"
+        }
+      ],
+      "knn": [
+        {
+          "article_id": "0919273002",
+          "product_type": "Blouse",
+          "colour": "Black",
+          "department": "Blouse",
+          "product_name": "Lucien lace",
+          "image_path": "data/images/091/0919273002.jpg"
+        },
+        {
+          "article_id": "0919741001",
+          "product_type": "Blouse",
+          "colour": "Black",
+          "department": "Blouse",
+          "product_name": "Garland",
+          "image_path": "data/images/091/0919741001.jpg"
+        },
+        {
+          "article_id": "0936012003",
+          "product_type": "Blouse",
+          "colour": "Black",
+          "department": "Blouse",
+          "product_name": "Valetta Blouse.",
+          "image_path": "data/images/093/0936012003.jpg"
+        },
+        {
+          "article_id": "0881942001",
+          "product_type": "Blouse",
+          "colour": "Black",
+          "department": "Blouse",
+          "product_name": "Fox",
+          "image_path": "data/images/088/0881942001.jpg"
+        },
+        {
+          "article_id": "0884319009",
+          "product_type": "Blouse",
+          "colour": "Black",
+          "department": "Blouse",
+          "product_name": "Lucien CONSCIOUS",
+          "image_path": "data/images/088/0884319009.jpg"
+        },
+        {
+          "article_id": "0865873002",
+          "product_type": "Blouse",
+          "colour": "Black",
+          "department": "Blouse",
+          "product_name": "Kagan top",
+          "image_path": "data/images/086/0865873002.jpg"
+        },
+        {
+          "article_id": "0695632001",
+          "product_type": "Blouse",
+          "colour": "Black",
+          "department": "Blouse",
+          "product_name": "Gyda blouse",
+          "image_path": "data/images/069/0695632001.jpg"
+        },
+        {
+          "article_id": "0916598001",
+          "product_type": "Blouse",
+          "colour": "Black",
+          "department": "Blouse",
+          "product_name": "Renee PU",
+          "image_path": "data/images/091/0916598001.jpg"
+        },
+        {
+          "article_id": "0895418002",
+          "product_type": "Blouse",
+          "colour": "Black",
+          "department": "Blouse",
+          "product_name": "Joelle strap top",
+          "image_path": "data/images/089/0895418002.jpg"
+        },
+        {
+          "article_id": "0884319002",
+          "product_type": "Blouse",
+          "colour": "Black",
+          "department": "Blouse",
+          "product_name": "Lucien CONSCIOUS",
+          "image_path": "data/images/088/0884319002.jpg"
+        },
+        {
+          "article_id": "0840607010",
+          "product_type": "Blouse",
+          "colour": "Black",
+          "department": "Blouse",
+          "product_name": "Nicole",
+          "image_path": "data/images/084/0840607010.jpg"
+        },
+        {
+          "article_id": "0927922002",
+          "product_type": "Blouse",
+          "colour": "Black",
+          "department": "Blouse",
+          "product_name": "Roxy Blouse.",
+          "image_path": "data/images/092/0927922002.jpg"
+        }
+      ],
+      "ncf_meta": [
+        {
+          "article_id": "0751471001",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Trouser",
+          "product_name": "Pluto RW slacks (1)",
+          "image_path": "data/images/075/0751471001.jpg"
+        },
+        {
+          "article_id": "0916468003",
+          "product_type": "Cardigan",
+          "colour": "Blue",
+          "department": "Knitwear",
+          "product_name": "Bailey",
+          "image_path": "data/images/091/0916468003.jpg"
+        },
+        {
+          "article_id": "0915529001",
+          "product_type": "Sweater",
+          "colour": "Beige",
+          "department": "Knitwear",
+          "product_name": "Liliana",
+          "image_path": "data/images/091/0915529001.jpg"
+        },
+        {
+          "article_id": "0751471043",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Trouser",
+          "product_name": "Pluto RW slacks (1)",
+          "image_path": "data/images/075/0751471043.jpg"
+        },
+        {
+          "article_id": "0762846006",
+          "product_type": "Shirt",
+          "colour": "Black",
+          "department": "Blouse",
+          "product_name": "Lucy blouse",
+          "image_path": "data/images/076/0762846006.jpg"
+        },
+        {
+          "article_id": "0842000008",
+          "product_type": "Sweater",
+          "colour": "Light Turquoise",
+          "department": "Tops Knitwear",
+          "product_name": "Shelly Polo Neck",
+          "image_path": "data/images/084/0842000008.jpg"
+        },
+        {
+          "article_id": "0751471038",
+          "product_type": "Trousers",
+          "colour": "Black",
+          "department": "Trouser",
+          "product_name": "Pluto RW slacks (1)",
+          "image_path": "data/images/075/0751471038.jpg"
+        },
+        {
+          "article_id": "0915529003",
+          "product_type": "Sweater",
+          "colour": "Black",
+          "department": "Knitwear",
+          "product_name": "Liliana",
+          "image_path": "data/images/091/0915529003.jpg"
+        },
+        {
+          "article_id": "0896152002",
+          "product_type": "T-shirt",
+          "colour": "Black",
+          "department": "Knitwear",
+          "product_name": "Amelie",
+          "image_path": "data/images/089/0896152002.jpg"
+        },
+        {
+          "article_id": "0871527003",
+          "product_type": "Blouse",
+          "colour": "Pink",
+          "department": "Blouse",
+          "product_name": "Ada",
+          "image_path": "data/images/087/0871527003.jpg"
+        },
+        {
+          "article_id": "0915526002",
+          "product_type": "Sweater",
+          "colour": "Black",
+          "department": "Knitwear",
+          "product_name": "Nika vest",
+          "image_path": "data/images/091/0915526002.jpg"
+        },
+        {
+          "article_id": "0842004003",
+          "product_type": "Cardigan",
+          "colour": "Grey",
+          "department": "Tops Knitwear",
+          "product_name": "Millicent Wrap Cardigan",
+          "image_path": "data/images/084/0842004003.jpg"
+        }
+      ]
+    }
+  }
+]
