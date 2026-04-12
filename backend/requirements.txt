@@ -1,0 +1,7 @@
+# AI-assisted (Cursor) -- https://cursor.com
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pandas>=2.0
+numpy>=1.26
+scikit-learn>=1.4
+torch>=2.0

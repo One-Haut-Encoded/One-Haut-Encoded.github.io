@@ -1,4 +1,4 @@
-# AI-assisted (Claude Code, claude.ai) -- https://claude.ai
+# AI-assisted (Cursor) -- https://cursor.com
 # Core
 pandas>=2.0
 numpy>=1.24
