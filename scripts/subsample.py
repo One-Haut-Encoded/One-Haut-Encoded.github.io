@@ -1,4 +1,4 @@
-# AI-assisted (Claude Code, claude.ai) -- https://claude.ai
+# AI-assisted (Cursor) -- https://cursor.com
 """Subsample the H&M dataset to a manageable size for development."""
 
 import pandas as pd

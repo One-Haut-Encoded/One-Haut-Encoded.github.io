@@ -1,19 +1,11 @@
-# Data — too large for git, but keep directory structure visible
-data/raw/**
-!data/raw/.gitkeep
-data/processed/**
-!data/processed/.gitkeep
-data/outputs/**
-!data/outputs/.gitkeep
+# AI-assisted (Cursor) -- https://cursor.com
+# Data — too large for git
+data/raw/
+data/processed/
+data/outputs/
 
-# Model artifacts — keep directory structure visible
-models/**
-!models/baseline/
-!models/baseline/.gitkeep
-!models/knn/
-!models/knn/.gitkeep
-!models/ncf/
-!models/ncf/.gitkeep
+# Model artifacts
+models/
 
 # Python
 __pycache__/
@@ -51,3 +43,6 @@ Thumbs.db
 
 # Kaggle
 *.zip
+
+onehautapp/
+images/

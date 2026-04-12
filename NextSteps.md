@@ -40,7 +40,7 @@ PR #3 adds the static frontend. Please review it and leave substantive comments 
 
 ### 2. Build the HF Spaces API Backend
 
-The frontend expects a FastAPI backend with these endpoints. You can use your existing `alexoh2020/onehautapp` Space or create a new one — just make sure it serves these routes:
+The frontend expects a FastAPI backend with these endpoints. Deploy from [`alexoh2020/onehaut_backend`](https://huggingface.co/spaces/alexoh2020/onehaut_backend) (or your fork) — just make sure it serves these routes:
 
 #### Required Endpoints
 
