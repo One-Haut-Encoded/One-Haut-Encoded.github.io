@@ -1,12 +1,7 @@
 ---
-title: One-Haut-Encoded
-emoji: 🛍
-colorFrom: blue
-colorTo: purple
-sdk: gradio
-sdk_version: 4.x.x
-python_version: 3.10
-app_file: backend/app.py
+title: OneHaut Backend
+sdk: docker
+app_port: 7860
 ---
 
 <!-- AI-assisted (Cursor) -- https://cursor.com -->
