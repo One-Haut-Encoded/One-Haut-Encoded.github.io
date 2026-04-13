@@ -3,10 +3,7 @@ title: One-Haut-Encoded
 emoji: 🛍
 colorFrom: blue
 colorTo: purple
-sdk: gradio
-sdk_version: 4.x.x
-python_version: 3.10
-app_file: backend/app.py
+sdk: docker
 ---
 
 <!-- AI-assisted (Cursor) -- https://cursor.com -->
