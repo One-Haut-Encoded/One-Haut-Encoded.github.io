@@ -10,11 +10,27 @@ jobs:
   sync-to-hub:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          lfs: true
+          lfs: false
+
+      - name: Unshallow if needed
+        run: |
+          git fetch --unshallow || true
+
+      - name: Configure git for HF
+        run: |
+          git config --global user.email "ci@github"
+          git config --global user.name "GitHub Actions"
+
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push --force https://alexoh2020:$HF_TOKEN@huggingface.co/spaces/alexoh2020/onehaut_backend main
+        run: |
+          git remote add hf https://alexoh2020:${HF_TOKEN}@huggingface.co/spaces/alexoh2020/onehaut_backend || \
+            git remote set-url hf https://alexoh2020:${HF_TOKEN}@huggingface.co/spaces/alexoh2020/onehaut_backend
+
+          git config lfs.https://huggingface.co/spaces/alexoh2020/onehaut_backend.git.locksverify false
+          GIT_LFS_SKIP_SMUDGE=1 git push --force hf main
